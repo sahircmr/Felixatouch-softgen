@@ -1,5 +1,9 @@
 import Head from 'next/head';
 
+const defaultTitle = "FelixaTouch - Best Clinic Management Software | Healthcare Solutions";
+const defaultDescription = "FelixaTouch offers comprehensive clinic management software to streamline operations, boost growth, and maximize profitability. Free demo available with smart reports and analytics.";
+const defaultImage = "/og-image.png";
+
 interface SEOProps {
   title?: string;
   description?: string;
@@ -9,9 +13,9 @@ interface SEOProps {
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
 export function SEOElements({
-  title = "Hello World",
-  description = "Welcome to my app",
-  image = "/og-image.png",
+  title = defaultTitle,
+  description = defaultDescription,
+  image = defaultImage,
   url,
 }: SEOProps) {
   return (
