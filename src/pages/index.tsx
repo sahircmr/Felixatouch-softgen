@@ -72,8 +72,8 @@ export default function Home() {
               <div className="relative animate-slide-in-right">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <Image
-                    src="/uploads/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
-                    alt="FelixaTouch Laboratory Tests Interface - Comprehensive lab management system showing sample types, panels, and test management"
+                    src="/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
+                    alt="FelixaTouch Laboratory Tests Interface - Comprehensive lab management system"
                     width={800}
                     height={600}
                     className="w-full h-auto"
@@ -316,8 +316,8 @@ export default function Home() {
               {/* Laboratory Management */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                 <Image
-                  src="/uploads/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
-                  alt="FelixaTouch Laboratory Management Interface - Complete lab ordering and management system"
+                  src="/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
+                  alt="FelixaTouch Laboratory Management Interface"
                   width={1200}
                   height={800}
                   className="w-full h-auto"
@@ -349,8 +349,8 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                     <Image
-                      src="/uploads/image_cc34f38c-abd3-4980-b648-fe2e2a247077.png"
-                      alt="FelixaTouch Mobile Prescription Interface - Digital prescription management on tablet"
+                      src="/image_cc34f38c-abd3-4980-b648-fe2e2a247077.png"
+                      alt="FelixaTouch Mobile Prescription Interface"
                       width={600}
                       height={800}
                       className="w-full h-auto"
@@ -364,8 +364,8 @@ export default function Home() {
                 <div className="relative order-2 md:order-1">
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                     <Image
-                      src="/uploads/image_72c0ae94-b65a-4f2f-8af3-a3c590d16d11.png"
-                      alt="FelixaTouch Dental Lab Works Interface - Manage dental procedures and lab orders"
+                      src="/image_72c0ae94-b65a-4f2f-8af3-a3c590d16d11.png"
+                      alt="FelixaTouch Dental Lab Works Interface"
                       width={600}
                       height={800}
                       className="w-full h-auto"
@@ -411,8 +411,8 @@ export default function Home() {
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-6xl mx-auto border-4 border-primary/10 mb-12">
               <Image
-                src="/uploads/image_bd6c3fa0-e3d1-4d74-8953-a3a3f23684f0.png"
-                alt="FelixaTouch Revenue Analytics Dashboard - Track clinic performance across multiple devices"
+                src="/image_bd6c3fa0-e3d1-4d74-8953-a3a3f23684f0.png"
+                alt="FelixaTouch Revenue Analytics Dashboard"
                 width={1200}
                 height={800}
                 className="w-full h-auto"
@@ -572,8 +572,8 @@ export default function Home() {
 
             <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto mb-12 border-4 border-primary/10">
               <Image
-                src="/uploads/image_54c5f5dc-7f31-45b1-b74a-de6924f6ee2d.png"
-                alt="FelixaTouch on tablet device showing intuitive interface"
+                src="/image_54c5f5dc-7f31-45b1-b74a-de6924f6ee2d.png"
+                alt="FelixaTouch on tablet device"
                 width={1200}
                 height={800}
                 className="w-full h-auto"
@@ -626,8 +626,8 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-8">
               <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-md border-4 border-primary/10">
                 <Image
-                  src="/uploads/image_2a918a77-5e66-4531-a31e-5d999629aa35.png"
-                  alt="FelixaTouch mobile app interface on smartphone"
+                  src="/image_2a918a77-5e66-4531-a31e-5d999629aa35.png"
+                  alt="FelixaTouch mobile app interface"
                   width={400}
                   height={600}
                   className="w-full h-auto"
