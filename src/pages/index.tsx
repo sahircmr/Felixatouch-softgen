@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="FelixaTouch - Best Clinic Management Software | Healthcare Solutions"
+        title="FelixaTouch - Best Clinic Management Software | Healthcare Solutions India"
         description="FelixaTouch offers comprehensive clinic management software to streamline operations, boost growth, and maximize profitability. Free demo available with smart reports and analytics."
         url="https://felixatouch.com"
       />
@@ -37,6 +37,7 @@ export default function Home() {
       <div className="min-h-screen flex flex-col">
         <Header />
 
+        {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5 py-20 lg:py-32">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -68,7 +69,7 @@ export default function Home() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src="/uploads/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
-                    alt="FelixaTouch Laboratory Tests Interface"
+                    alt="FelixaTouch Laboratory Tests Interface - Comprehensive lab management system"
                     width={800}
                     height={600}
                     className="w-full h-auto"
@@ -80,6 +81,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Value Proposition Section */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
