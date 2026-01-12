@@ -22,7 +22,9 @@ import {
   Users,
   ClipboardList,
   Smartphone,
-  Star
+  Star,
+  Shield,
+  Zap
 } from "lucide-react";
 
 export default function Home() {
@@ -96,6 +98,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Main Features Section */}
         <section id="features" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -109,13 +112,14 @@ export default function Home() {
                 FelixaTouch offers a free demo of its clinic management software to help you streamline operations, boost growth, and maximize profitability. With smart reports and analytics, you can access insights anytime and anywhere.
               </p>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
-                For effortless adoption, we provide FelixaKit, an all in one hardware solution preloaded with FelixaTouch. <strong>It</strong> ensures quick setup, smooth onboarding, and hassle free management of patients, billing, labs, pharmacy, and more.
+                For effortless adoption, we provide <strong>FelixaKit</strong>, an all-in-one hardware solution preloaded with FelixaTouch. It ensures quick setup, smooth onboarding, and hassle-free management of patients, billing, labs, pharmacy, and more.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90" asChild>
                 <Link href="#demo">BOOK DEMO</Link>
               </Button>
             </div>
 
+            {/* Clinic Types */}
             <div className="mb-20">
               <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
                 Get FelixaTouch <em className="text-primary font-serif not-italic">free demo!</em>
@@ -172,6 +176,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Patient Engagement Section */}
         <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -194,7 +199,7 @@ export default function Home() {
                 {
                   icon: <MessageSquare className="w-10 h-10 text-blue-600" />,
                   title: "SMS",
-                  description: "Deliver important notifications and alerts reliably, even without internet access. Everything you need to manage patients, operations, and growth efficiently in one system."
+                  description: "Deliver important notifications and alerts reliably, even without internet access."
                 },
                 {
                   icon: <Mail className="w-10 h-10 text-orange-600" />,
@@ -228,6 +233,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Key Features Section */}
         <section className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -249,7 +255,7 @@ export default function Home() {
                 {
                   icon: <Activity className="w-8 h-8 text-primary" />,
                   title: "Pharmacy & Labs",
-                  description: "FelixaTouch's Lab Management module streamlines diagnostic workflows end-to-end. From test orders and prescriptions to automated report generation and charge capture, every step is logged in the patient's electronic record."
+                  description: "FelixaTouch's Lab Management module streamlines diagnostic workflows end-to-end. From test orders to automated report generation."
                 },
                 {
                   icon: <HeartPulse className="w-8 h-8 text-primary" />,
@@ -264,12 +270,12 @@ export default function Home() {
                 {
                   icon: <Package className="w-8 h-8 text-primary" />,
                   title: "Inventory Management",
-                  description: "Monitor and control clinic supplies, medicines, and inventory levels in real-time. Track usage, reduce wastage, and ensure uninterrupted supplies."
+                  description: "Monitor and control clinic supplies, medicines, and inventory levels in real-time."
                 },
                 {
                   icon: <BarChart3 className="w-8 h-8 text-primary" />,
                   title: "Analytics Dashboards",
-                  description: "Track clinic performance with real-time insights, key metrics, and clear reports to optimize operations and improve care."
+                  description: "Track clinic performance with real-time insights, key metrics, and clear reports to optimize operations."
                 }
               ].map((feature, index) => (
                 <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -296,6 +302,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Revenue Insights CTA */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -303,7 +310,7 @@ export default function Home() {
                 Maximize Your Clinic&apos;s Revenue with Data-Driven Insights
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Unlock the full potential of your clinic with Felixatouch&apos;s advanced analytics. Get actionable insights into your revenue streams, identify growth opportunities, and make informed decisions that directly impact your bottom line. Streamline operations and track performance to ensure your clinic thrives financially.
+                Unlock the full potential of your clinic with Felixatouch&apos;s advanced analytics. Get actionable insights into your revenue streams, identify growth opportunities, and make informed decisions that directly impact your bottom line.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90" asChild>
                 <Link href="#demo">Know More</Link>
@@ -312,6 +319,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimonials */}
         <section id="testimonials" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -362,6 +370,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Security & Therapy Management */}
         <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -378,11 +387,11 @@ export default function Home() {
               <Card className="hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8 space-y-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <FileText className="w-6 h-6 text-primary" />
+                    <Shield className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold">Data Security & Compliance</h3>
                   <p className="text-muted-foreground">
-                    FelixaTouch places top priority on patient data safety and security, adhering to DPDPA and ABDM compliance standards. With advanced encryption, secure access controls, and seamless integration with global frameworks, our platform safeguards sensitive information at every step. Designed to empower healthcare professionals, FelixaTouch ensures a trusted, reliable, and efficient system for managing patient care.
+                    FelixaTouch places top priority on patient data safety and security, adhering to DPDPA and ABDM compliance standards. With advanced encryption, secure access controls, and seamless integration with global frameworks, our platform safeguards sensitive information at every step.
                   </p>
                 </CardContent>
               </Card>
@@ -394,54 +403,21 @@ export default function Home() {
                   </div>
                   <h3 className="text-2xl font-bold">Complete Therapy Management</h3>
                   <p className="text-muted-foreground">
-                    FelixaTouch brings structure and clarity to therapy services in the clinic. Doctors can order therapies directly from the patient&apos;s consultation dashboard, and these requests appear instantly on the therapist&apos;s dashboard for action. Therapists can view their schedules, update progress, and complete assigned sessions, while the front desk and administrators monitor every task to ensure smooth coordination. Even patients who come only for therapy, without a prior consultation, can be managed easily within the system. With Therapy Management in FelixaTouch, clinics deliver more organized, timely, and patient-focused care that builds confidence and satisfaction.
+                    FelixaTouch brings structure and clarity to therapy services. Doctors can order therapies directly, and requests appear instantly on the therapist&apos;s dashboard. Therapists can view schedules, update progress, and complete sessions with full coordination.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="mt-16 text-center">
-              <Card className="inline-block hover:shadow-lg transition-all duration-300">
+              <Card className="inline-block hover:shadow-lg transition-all duration-300 max-w-3xl">
                 <CardContent className="p-8 space-y-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
-                    <Users className="w-6 h-6 text-primary" />
+                    <Zap className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold">Dedicated Monthly Clinic Support</h3>
-                  <p className="text-muted-foreground max-w-3xl">
-                    At Felixatouch, we believe in building long-term partnerships with our clients. Our dedicated team will proactively contact your clinic monthly to ensure smooth operations, address any concerns, and offer expert advice. We also provide personalized recommendations to help streamline your workflows, optimize service delivery, and enhance patient satisfaction, ensuring your clinic stays ahead of the curve.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Meet Our <em className="text-primary font-serif not-italic">Founders</em>
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                The minds behind FelixaTouch are driven by one goal — to build smarter systems that help healthcare teams focus on what truly matters: patient care.
-              </p>
-            </div>
-
-            <div className="max-w-md mx-auto">
-              <Card className="hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 text-center space-y-4">
-                  <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden">
-                    <Image
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
-                      alt="Founder"
-                      width={400}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold">Founder Name</h3>
                   <p className="text-muted-foreground">
-                    Passionate about transforming healthcare through technology
+                    At Felixatouch, we believe in building long-term partnerships. Our dedicated team will proactively contact your clinic monthly to ensure smooth operations, address concerns, and offer expert advice for workflow optimization.
                   </p>
                 </CardContent>
               </Card>
@@ -449,6 +425,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ Section */}
         <section id="faq" className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -456,7 +433,7 @@ export default function Home() {
                 Frequently Asked <em className="text-primary font-serif not-italic">Questions</em>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Doubt in how to choose best clinic management software in India? Contact us for a version tailored to your needs. Get all your questions answered before making the right choice!
+                Doubt in how to choose best clinic management software in India? Contact us for a version tailored to your needs. Get all your questions answered!
               </p>
             </div>
 
@@ -476,13 +453,13 @@ export default function Home() {
                   What features does our clinic management software offer?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Our software includes features such as appointment scheduling, patient record management, e-prescriptions, automated reminders, queue management, billing, reporting tools and other relevant features.
+                  Our software includes features such as appointment scheduling, patient record management, e-prescriptions, automated reminders, queue management, billing, lab management, pharmacy management, and comprehensive reporting tools.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="bg-card rounded-lg px-6 border">
                 <AccordionTrigger className="text-left hover:no-underline">
-                  Can FelixaTouch helps identify areas of revenue growth?
+                  Can FelixaTouch help identify areas of revenue growth?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   Yes, FelixaTouch provides detailed analytics and insights that help identify revenue opportunities, track financial performance, and optimize clinic operations for better profitability.
@@ -494,13 +471,14 @@ export default function Home() {
                   How can Felixatouch help increase my clinic&apos;s lead generation and footfall?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  FelixaTouch enhances patient engagement through automated reminders, bulk messaging, and streamlined appointment booking, helping attract and retain more patients.
+                  FelixaTouch enhances patient engagement through automated reminders, bulk messaging via WhatsApp, SMS and Email, and streamlined appointment booking, helping attract and retain more patients.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
         </section>
 
+        {/* Download App Section */}
         <section id="demo" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -536,6 +514,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Final CTA */}
         <section className="py-20 bg-gradient-to-br from-primary to-accent text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
