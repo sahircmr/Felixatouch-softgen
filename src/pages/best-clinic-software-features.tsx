@@ -87,7 +87,7 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_89d835e9-381b-4cc6-b592-e931a5769cd4.png"
+                  src="/image_b2d5d068-7eac-4e4c-ab79-36bbc85d4658.png"
                   alt="Patient demographics and family consultation"
                   width={600}
                   height={400}
@@ -137,7 +137,7 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_507b9026-e96a-4406-ac1a-9ccdac3dec85.png"
+                  src="/image_a8e48c98-832a-4c08-add2-063cb5b46063.png"
                   alt="Token display system in waiting room"
                   width={600}
                   height={400}
@@ -287,7 +287,7 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/image_f226ede5-31b2-421d-abbf-583e1d284847.png"
+                  src="/image_8705c036-3c52-4cd8-ad3f-bff2907ca476.png"
                   alt="SMS and email engagement messaging on mobile"
                   width={600}
                   height={400}
@@ -575,7 +575,7 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_89d835e9-381b-4cc6-b592-e931a5769cd4.png"
+                  src="/image_b2d5d068-7eac-4e4c-ab79-36bbc85d4658.png"
                   alt="Patient records storage"
                   width={600}
                   height={400}
