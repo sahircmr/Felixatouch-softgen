@@ -125,8 +125,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_31953b00-65e5-4e55-b575-43d4b3909faa.png"
-                  alt="Queue and appointment management system"
+                  src="/image_2d0ff6b1-f829-4087-99a7-500a75ef2d56.png"
+                  alt="Healthcare team collaboration and appointment management"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -175,8 +175,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
-                  alt="Waiting room with patients"
+                  src="/image_2d0ff6b1-f829-4087-99a7-500a75ef2d56.png"
+                  alt="Team meeting for queue management planning"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -187,8 +187,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800"
-                  alt="Prescription bottles and medication"
+                  src="/image_8e31e9f9-6bc6-47da-bc63-ce3474672863.png"
+                  alt="Professional prescription bottles and medication management"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -237,8 +237,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_507b9026-e96a-4406-ac1a-9ccdac3dec85.png"
-                  alt="Pharmacy management system"
+                  src="/image_ddd71541-ec9d-4d4b-acd2-99cbb25a7f4f.png"
+                  alt="Doctor managing pharmacy inventory and prescriptions"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -275,8 +275,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=800"
-                  alt="Medical procedure documentation"
+                  src="/image_c0953057-5b5a-49bd-b87c-b0876c7155ab.png"
+                  alt="Medical professional managing procedures and ordering system"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -435,19 +435,10 @@ export default function FeaturesPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-              <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src="/uploads/image_31953b00-65e5-4e55-b575-43d4b3909faa.png"
-                  alt="Incentive and commission tracking"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="order-1 md:order-2">
+              <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
-                    <TrendingUp className="w-8 h-8 text-accent-600" />
+                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
+                    <TrendingUp className="w-8 h-8 text-primary-600" />
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
                     Incentive & Commission Management
@@ -456,6 +447,15 @@ export default function FeaturesPage() {
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                   Motivate your team with performance-based incentives. Track and calculate commissions for doctors, lab technicians, or staff automatically, based on procedures, services, or sales.
                 </p>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/uploads/image_31953b00-65e5-4e55-b575-43d4b3909faa.png"
+                  alt="Incentive and commission tracking"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 
@@ -525,8 +525,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_507b9026-e96a-4406-ac1a-9ccdac3dec85.png"
-                  alt="Revenue dashboard interface"
+                  src="/image_ddd71541-ec9d-4d4b-acd2-99cbb25a7f4f.png"
+                  alt="Healthcare professional reviewing revenue analytics"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -537,8 +537,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800"
-                  alt="Multiple devices - tablet and laptop"
+                  src="/image_8061e273-54a8-46a1-b0d9-2d960d123000.png"
+                  alt="Mobile device and laptop showing multi-device connectivity"
                   width={600}
                   height={400}
                   className="w-full h-auto"
