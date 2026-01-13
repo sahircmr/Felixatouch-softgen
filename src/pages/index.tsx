@@ -25,7 +25,8 @@ import {
   Star,
   Shield,
   Zap,
-  CheckCircle2
+  CheckCircle2,
+  ArrowRight
 } from "lucide-react";
 
 export default function Home() {
@@ -394,6 +395,75 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Powerful Features for Modern Clinics
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Everything you need to manage your clinic efficiently in one comprehensive platform
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                icon: FileText,
+                title: "Smart Prescriptions",
+                description: "Create professional prescriptions with customizable templates and intuitive design"
+              },
+              {
+                icon: Activity,
+                title: "Pharmacy & Labs",
+                description: "FelixaTouch's Lab Management module streamlines diagnostic workflows end-to-end. From test orders to automated report generation."
+              },
+              {
+                icon: HeartPulse,
+                title: "Patient Care",
+                description: "Support better patient outcomes with automated medicine reminders and bulk communication tools"
+              },
+              {
+                icon: DollarSign,
+                title: "Revenue",
+                description: "Track earnings effortlessly with digitized payments and a clear, actionable analytics dashboard."
+              },
+              {
+                icon: Package,
+                title: "Inventory Management",
+                description: "Monitor and control clinic supplies, medicines, and inventory levels in real-time."
+              },
+              {
+                icon: BarChart3,
+                title: "Analytics Dashboards",
+                description: "Track clinic performance with real-time insights, key metrics, and clear reports to optimize operations."
+              }
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="group p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
+              >
+                <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg w-fit mb-4 group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/best-clinic-software-features">
+                View All Features <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
           </div>
         </section>
 
