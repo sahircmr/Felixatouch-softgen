@@ -225,8 +225,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/image_d3709a87-d48a-409f-b4c4-978d84fcc9c4.png"
-                  alt="Laboratory tests management interface"
+                  src="/image_cb5c6270-e58e-4d22-8c3a-f7bb7a726a2a.png"
+                  alt="Laboratory management with medical team and analytics"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -325,8 +325,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800"
-                  alt="Patient smiling during consultation"
+                  src="/image_fe059a92-ba49-4a99-927e-2da16f7f27da.png"
+                  alt="Patient smiling during consultation with healthcare provider"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -375,8 +375,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800"
-                  alt="Pharmacy inventory shelves"
+                  src="/image_0d78f378-b4b3-47c3-a40e-fb210a08b305.png"
+                  alt="Pharmacy inventory management with tablet system"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -425,8 +425,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800"
-                  alt="Insurance documentation and management"
+                  src="/image_2e8ecb24-db0a-433d-b6f1-6b8679e65962.png"
+                  alt="Insurance management digital interface"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -435,10 +435,19 @@ export default function FeaturesPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-              <div>
+              <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/image_ff9b40a8-0b0a-43b7-bc64-1b4164e52d89.png"
+                  alt="Healthcare professional managing incentive and commission tracking system"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="order-1 md:order-2">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
-                    <TrendingUp className="w-8 h-8 text-primary-600" />
+                  <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
+                    <TrendingUp className="w-8 h-8 text-accent-600" />
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
                     Incentive & Commission Management
@@ -447,15 +456,6 @@ export default function FeaturesPage() {
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                   Motivate your team with performance-based incentives. Track and calculate commissions for doctors, lab technicians, or staff automatically, based on procedures, services, or sales.
                 </p>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src="/uploads/image_31953b00-65e5-4e55-b575-43d4b3909faa.png"
-                  alt="Incentive and commission tracking"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
-                />
               </div>
             </div>
 
