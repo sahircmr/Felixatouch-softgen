@@ -24,6 +24,9 @@ export function Header() {
             <Link href="/dental-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Dental
             </Link>
+            <Link href="/unani-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Unani
+            </Link>
             <Link href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Benefits
             </Link>
@@ -71,6 +74,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Dental
+            </Link>
+            <Link 
+              href="/unani-clinic-management-software" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Unani
             </Link>
             <Link 
               href="#benefits" 
