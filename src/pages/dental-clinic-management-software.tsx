@@ -152,15 +152,15 @@ export default function DentalClinicManagementSoftware() {
                     </span>
                   </div>
                   
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-foreground">
                     Ultimate Dental
                     <span className="block text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                       Clinic Management
                     </span>
-                    <span className="block">Software</span>
+                    <span className="block text-foreground">Software</span>
                   </h1>
                   
-                  <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                  <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
                     Digitize your dental practice with FelixaTouch, a cloud-based dental clinic management software designed for seamless integration. Experience improved patient care and streamlined operations through features such as e-prescriptions, advanced EMR, efficient appointment scheduling, and effective queue management.
                   </p>
                   
@@ -177,17 +177,17 @@ export default function DentalClinicManagementSoftware() {
                   <div className="flex items-center gap-8 pt-4">
                     <div className="text-center">
                       <div className="text-3xl font-black text-brand-primary">50%</div>
-                      <div className="text-sm text-slate-600 dark:text-slate-400">Cost Savings</div>
+                      <div className="text-sm text-muted-foreground">Cost Savings</div>
                     </div>
-                    <div className="w-px h-12 bg-slate-300 dark:bg-slate-700" />
+                    <div className="w-px h-12 bg-border" />
                     <div className="text-center">
                       <div className="text-3xl font-black text-emerald-600">24/7</div>
-                      <div className="text-sm text-slate-600 dark:text-slate-400">Cloud Access</div>
+                      <div className="text-sm text-muted-foreground">Cloud Access</div>
                     </div>
-                    <div className="w-px h-12 bg-slate-300 dark:bg-slate-700" />
+                    <div className="w-px h-12 bg-border" />
                     <div className="text-center">
                       <div className="text-3xl font-black text-purple-600">Easy</div>
-                      <div className="text-sm text-slate-600 dark:text-slate-400">Like WhatsApp</div>
+                      <div className="text-sm text-muted-foreground">Like WhatsApp</div>
                     </div>
                   </div>
                 </div>
@@ -226,33 +226,33 @@ export default function DentalClinicManagementSoftware() {
                 </div>
                 
                 <div className="space-y-6 order-1 lg:order-2">
-                  <h2 className="text-4xl md:text-5xl font-black leading-tight">
+                  <h2 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
                     Simplify dental charting with our{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-purple-600">
                       interactive, color-coded tooth chart
                     </span>
                   </h2>
                   
-                  <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     Streamline documentation and enhance diagnostic accuracy with visual tooth status tracking. Our intuitive system makes it easy to identify and document various dental conditions, improving treatment planning and patient communication.
                   </p>
                   
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                      <span className="text-slate-700 dark:text-slate-300">Visual color-coded tooth status indicators</span>
+                      <span className="text-foreground">Visual color-coded tooth status indicators</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                      <span className="text-slate-700 dark:text-slate-300">Easy documentation of dental conditions</span>
+                      <span className="text-foreground">Easy documentation of dental conditions</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                      <span className="text-slate-700 dark:text-slate-300">Enhanced diagnostic accuracy and treatment planning</span>
+                      <span className="text-foreground">Enhanced diagnostic accuracy and treatment planning</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                      <span className="text-slate-700 dark:text-slate-300">Complete dental procedure tracking</span>
+                      <span className="text-foreground">Complete dental procedure tracking</span>
                     </li>
                   </ul>
                 </div>
@@ -264,13 +264,13 @@ export default function DentalClinicManagementSoftware() {
           <section className="py-20 px-4">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
-                <h2 className="text-4xl md:text-5xl font-black">
+                <h2 className="text-4xl md:text-5xl font-black text-foreground">
                   Implement best practices with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                     cloud-based FelixaTouch
                   </span>
                 </h2>
-                <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                   Standardize your dental practice with FelixaTouch, the industry's premier management software. Establish best practices across all aspects of your clinic, from appointments to patient records.
                 </p>
               </div>
@@ -283,10 +283,10 @@ export default function DentalClinicManagementSoftware() {
                         {feature.icon}
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-brand-primary transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-brand-primary transition-colors text-foreground">
                       {feature.title}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>
                   </Card>
@@ -300,14 +300,14 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <h2 className="text-4xl md:text-5xl font-black leading-tight">
+                  <h2 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
                     Scan & Lab Ordering
                     <span className="block text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                       Made Simple
                     </span>
                   </h2>
                   
-                  <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     Streamline your diagnostic processes with Felixatouch's integrated Scan & Lab Ordering feature. Electronically order scans and lab tests directly from patient records, eliminating manual processes and improving accuracy.
                   </p>
                   
@@ -317,8 +317,8 @@ export default function DentalClinicManagementSoftware() {
                         <Zap className="w-5 h-5 text-brand-primary" />
                       </div>
                       <div>
-                        <h4 className="font-bold mb-1">Direct Electronic Ordering</h4>
-                        <p className="text-sm text-slate-600 dark:text-slate-300">Order scans and lab tests directly from patient records</p>
+                        <h4 className="font-bold mb-1 text-foreground">Direct Electronic Ordering</h4>
+                        <p className="text-sm text-muted-foreground">Order scans and lab tests directly from patient records</p>
                       </div>
                     </div>
                     
@@ -327,8 +327,8 @@ export default function DentalClinicManagementSoftware() {
                         <CheckCircle2 className="w-5 h-5 text-emerald-600" />
                       </div>
                       <div>
-                        <h4 className="font-bold mb-1">Eliminate Manual Processes</h4>
-                        <p className="text-sm text-slate-600 dark:text-slate-300">Reduce errors and save time with automated workflows</p>
+                        <h4 className="font-bold mb-1 text-foreground">Eliminate Manual Processes</h4>
+                        <p className="text-sm text-muted-foreground">Reduce errors and save time with automated workflows</p>
                       </div>
                     </div>
                     
@@ -337,8 +337,8 @@ export default function DentalClinicManagementSoftware() {
                         <BarChart3 className="w-5 h-5 text-purple-600" />
                       </div>
                       <div>
-                        <h4 className="font-bold mb-1">Improved Accuracy</h4>
-                        <p className="text-sm text-slate-600 dark:text-slate-300">Ensure accurate diagnostic ordering with digital integration</p>
+                        <h4 className="font-bold mb-1 text-foreground">Improved Accuracy</h4>
+                        <p className="text-sm text-muted-foreground">Ensure accurate diagnostic ordering with digital integration</p>
                       </div>
                     </div>
                   </div>
@@ -364,13 +364,13 @@ export default function DentalClinicManagementSoftware() {
           <section className="py-20 px-4">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
-                <h2 className="text-4xl md:text-5xl font-black">
+                <h2 className="text-4xl md:text-5xl font-black text-foreground">
                   Global Support with{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                     Complete Clinic Management
                   </span>
                 </h2>
-                <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                   FelixaTouch provides comprehensive solutions for every aspect of your dental practice
                 </p>
               </div>
@@ -382,8 +382,8 @@ export default function DentalClinicManagementSoftware() {
                       {benefit.icon}
                     </div>
                     <div>
-                      <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
-                      <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                      <h3 className="font-bold text-lg mb-2 text-foreground">{benefit.title}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
                         {benefit.description}
                       </p>
                     </div>
@@ -397,7 +397,7 @@ export default function DentalClinicManagementSoftware() {
           <section className="py-20 px-4 bg-slate-100 dark:bg-slate-900/50">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
-                <h2 className="text-4xl md:text-5xl font-black">
+                <h2 className="text-4xl md:text-5xl font-black text-foreground">
                   Perfect for Every{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                     Dental Practice
@@ -411,8 +411,8 @@ export default function DentalClinicManagementSoftware() {
                     <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-primary/10 to-emerald-600/10 flex items-center justify-center mx-auto mb-6 text-brand-primary">
                       {useCase.icon}
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">{useCase.title}</h3>
-                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <h3 className="text-2xl font-bold mb-4 text-foreground">{useCase.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       {useCase.description}
                     </p>
                   </Card>
@@ -448,14 +448,14 @@ export default function DentalClinicManagementSoftware() {
           {/* Final CTA */}
           <section className="py-20 px-4">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-black">
+              <h2 className="text-4xl md:text-5xl font-black text-foreground">
                 Ready to Transform Your{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
                   Dental Practice?
                 </span>
               </h2>
               
-              <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Join hundreds of dental practices that have digitized their operations with FelixaTouch. Experience improved patient care, streamlined workflows, and significant cost savings.
               </p>
               
