@@ -18,7 +18,7 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/best-clinic-software-features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Features
             </Link>
             <Link href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -56,7 +56,7 @@ export function Header() {
         <div className="md:hidden border-t">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link 
-              href="#features" 
+              href="/best-clinic-software-features" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >

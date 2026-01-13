@@ -49,7 +49,7 @@ export default function FeaturesPage() {
 
             <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-20">
               <Image
-                src="/uploads/image_667906fa-aed3-423c-9915-efaf8f672d4b.png"
+                src="/image_c4bd0fd2-3606-4c38-9eb6-020ac52af184.png"
                 alt="Stethoscope on keyboard - Medical clinic software"
                 width={1200}
                 height={600}
@@ -75,7 +75,7 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_667906fa-aed3-423c-9915-efaf8f672d4b.png"
+                  src="/image_c4bd0fd2-3606-4c38-9eb6-020ac52af184.png"
                   alt="Electronic Medical Records system"
                   width={600}
                   height={400}
@@ -287,8 +287,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=800"
-                  alt="SMS and email engagement messaging"
+                  src="/image_f226ede5-31b2-421d-abbf-583e1d284847.png"
+                  alt="SMS and email engagement messaging on mobile"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -337,8 +337,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_507b9026-e96a-4406-ac1a-9ccdac3dec85.png"
-                  alt="Template creation interface"
+                  src="/image_a32d14d3-977d-4b8e-8a3f-f386d591be1a.png"
+                  alt="Template creation and custom reports interface"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -475,8 +475,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/image_bd6c3fa0-e3d1-4d74-8953-a3a3f23684f0.png"
-                  alt="Analytics dashboards on multiple devices"
+                  src="/image_db924faa-a8ab-4967-88c9-e21d615dd15c.png"
+                  alt="Analytics dashboards showing revenue metrics on multiple devices"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -487,8 +487,8 @@ export default function FeaturesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div className="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/uploads/image_507b9026-e96a-4406-ac1a-9ccdac3dec85.png"
-                  alt="Custom date-wise reports"
+                  src="/image_a32d14d3-977d-4b8e-8a3f-f386d591be1a.png"
+                  alt="Custom date-wise reports and documentation"
                   width={600}
                   height={400}
                   className="w-full h-auto"
@@ -525,8 +525,8 @@ export default function FeaturesPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/image_ddd71541-ec9d-4d4b-acd2-99cbb25a7f4f.png"
-                  alt="Healthcare professional reviewing revenue analytics"
+                  src="/image_db924faa-a8ab-4967-88c9-e21d615dd15c.png"
+                  alt="Revenue dashboards with financial analytics"
                   width={600}
                   height={400}
                   className="w-full h-auto"
