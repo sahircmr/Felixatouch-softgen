@@ -358,10 +358,7 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                  Global Support with{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
-                    Complete Clinic Management
-                  </span>
+                 Global Support with Complete Clinic Management
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
                   FelixaTouch provides comprehensive solutions for every aspect of your dental practice
@@ -391,8 +388,7 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                    Perfect for Every  Dental Practice
-                 
+                    Perfect for Every  Dental Practice                
                 </h2>
               </div>
 
