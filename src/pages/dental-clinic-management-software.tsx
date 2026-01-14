@@ -417,7 +417,6 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                 The Most User-Friendly Software Ever
-                text-4xl md:text-5xl font-black text-slate-900 dark:text-white
               </h2>
                           
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
