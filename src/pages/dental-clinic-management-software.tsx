@@ -260,7 +260,7 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                 Implement best practices with cloud-based FelixaTouch
+                 Implement <span className="text-brand-primary">best practices</span> with <span className="text-emerald-600">cloud-based</span> FelixaTouch
                  
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
@@ -294,8 +294,8 @@ export default function DentalClinicManagementSoftware() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900 dark:text-white">
-                    Scan & Lab Ordering
-                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
+                    <span className="text-purple-600">Scan</span> & <span className="text-emerald-600">Lab Ordering</span>
+                    <span className="block text-brand-primary">
                       Made Simple
                     </span>
                   </h2>
@@ -358,7 +358,7 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                 Global Support with Complete Clinic Management
+                 <span className="text-emerald-600">Global Support</span> with <span className="text-brand-primary">Complete</span> Clinic Management
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
                   FelixaTouch provides comprehensive solutions for every aspect of your dental practice
@@ -388,7 +388,7 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                    Perfect for Every  Dental Practice                
+                    <span className="text-brand-primary">Perfect</span> for <span className="text-emerald-600">Every</span>  Dental Practice                
                 </h2>
               </div>
 

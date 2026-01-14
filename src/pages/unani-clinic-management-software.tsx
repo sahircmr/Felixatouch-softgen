@@ -290,7 +290,7 @@ export default function UnaniClinicManagementSoftware() {
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                   First{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                  <span className="text-emerald-600">
                     Unani Clinic Software
                   </span>
                 </h2>
@@ -325,7 +325,7 @@ export default function UnaniClinicManagementSoftware() {
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                   Why Choose{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                  <span className="text-emerald-600">
                     FelixaTouch Unani
                   </span>
                 </h2>
@@ -358,7 +358,7 @@ export default function UnaniClinicManagementSoftware() {
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                   Perfect for Every{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                  <span className="text-emerald-600">
                     Unani Practice
                   </span>
                 </h2>
@@ -409,7 +409,7 @@ export default function UnaniClinicManagementSoftware() {
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                 Ready to Transform Your{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                <span className="text-emerald-600">
                   Unani Practice?
                 </span>
               </h2>
