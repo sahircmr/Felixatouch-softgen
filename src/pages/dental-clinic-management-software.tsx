@@ -391,10 +391,8 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                  Perfect for Every{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
-                    Dental Practice
-                  </span>
+                    Perfect for Every  Dental Practice
+                 
                 </h2>
               </div>
 
@@ -417,8 +415,9 @@ export default function DentalClinicManagementSoftware() {
           {/* User-Friendly CTA */}
           <section className="py-20 px-4 bg-gradient-to-br from-brand-primary to-emerald-600">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-black text-white">
-                The Most User-Friendly Software Ever
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
+                              The Most User-Friendly Software Ever
+                text-4xl md:text-5xl font-black text-slate-900 dark:text-white
               </h2>
               
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
