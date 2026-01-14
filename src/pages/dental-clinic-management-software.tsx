@@ -416,11 +416,11 @@ export default function DentalClinicManagementSoftware() {
           <section className="py-20 px-4 bg-gradient-to-br from-brand-primary to-emerald-600">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                              The Most User-Friendly Software Ever
+                The Most User-Friendly Software Ever
                 text-4xl md:text-5xl font-black text-slate-900 dark:text-white
               </h2>
-              
-              <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+                          
+                <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
                 FelixaTouch is designed to be the most user-friendly software you'll ever encounter. Its intuitive interface and streamlined workflows make it easy for anyone to learn and use, regardless of technical expertise.
               </p>
               
@@ -441,10 +441,7 @@ export default function DentalClinicManagementSoftware() {
           <section className="py-20 px-4">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                Ready to Transform Your{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
-                  Dental Practice?
-                </span>
+                Ready to Transform Your Dental Practice?
               </h2>
               
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
