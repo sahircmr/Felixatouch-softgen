@@ -153,10 +153,8 @@ export default function DentalClinicManagementSoftware() {
                   </div>
                   
                   <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
-                    Ultimate Dental
-                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
-                      Clinic Management
-                    </span>
+                                      Ultimate Dental Clinic Management
+                   
                     <span className="block text-slate-900 dark:text-white">Software</span>
                   </h1>
                   
