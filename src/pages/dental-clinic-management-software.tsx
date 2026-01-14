@@ -260,10 +260,8 @@ export default function DentalClinicManagementSoftware() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
-                  Implement best practices with{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-600">
-                    cloud-based FelixaTouch
-                  </span>
+                 Implement best practices with cloud-based FelixaTouch
+                 
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
                   Standardize your dental practice with FelixaTouch, the industry's premier management software. Establish best practices across all aspects of your clinic, from appointments to patient records.
