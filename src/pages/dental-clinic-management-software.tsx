@@ -225,10 +225,7 @@ export default function DentalClinicManagementSoftware() {
                 
                 <div className="space-y-6 order-1 lg:order-2">
                   <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900 dark:text-white">
-                    Simplify dental charting with our{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-purple-600">
-                      interactive, color-coded tooth chart
-                    </span>
+                  Simplify dental charting with our interactive, color-coded tooth chart
                   </h2>
                   
                   <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
