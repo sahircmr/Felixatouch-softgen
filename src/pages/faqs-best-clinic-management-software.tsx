@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Shield, TrendingUp, Users, Zap, Globe, HeadphonesIcon, FileText, CreditCard, GraduationCap } from "lucide-react";
@@ -228,7 +229,7 @@ export default function FAQPage() {
                 </h2>
                 
                 <div className="grid md:grid-cols-3 gap-6">
-                  <a
+                  <Link
                     href="/best-clinic-software-features"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-brand-primary"
                   >
@@ -241,9 +242,9 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Discover all the powerful features
                     </p>
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="/dental-clinic-management-software"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-500"
                   >
@@ -256,9 +257,9 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Specialized dental clinic solution
                     </p>
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="/unani-clinic-management-software"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-600"
                   >
@@ -271,7 +272,7 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Tailored for Unani practices
                     </p>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
