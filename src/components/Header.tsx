@@ -27,14 +27,14 @@ export function Header() {
             <Link href="/unani-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Unani
             </Link>
+            <Link href="/faqs-best-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              FAQ
+            </Link>
             <Link href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Benefits
             </Link>
             <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Testimonials
-            </Link>
-            <Link href="#faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              FAQ
             </Link>
             <ThemeSwitch />
             <Button variant="outline" size="sm" asChild>
@@ -83,6 +83,13 @@ export function Header() {
               Unani
             </Link>
             <Link 
+              href="/faqs-best-clinic-management-software" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
+            </Link>
+            <Link 
               href="#benefits" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
@@ -95,13 +102,6 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
-            </Link>
-            <Link 
-              href="#faq" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              FAQ
             </Link>
             <Button variant="outline" size="sm" asChild className="w-full">
               <Link href="#demo">Login</Link>

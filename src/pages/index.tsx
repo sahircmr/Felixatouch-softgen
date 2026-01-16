@@ -628,59 +628,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section id="faq" className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Frequently Asked <em className="text-primary font-serif not-italic">Questions</em>
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Doubt in how to choose best clinic management software in India? Contact us for a version tailored to your needs. Get all your questions answered!
-              </p>
-            </div>
-
-            <div className="relative rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto mb-12 border-4 border-primary/10">
-              <Image
-                src="/image_54c5f5dc-7f31-45b1-b74a-de6924f6ee2d.png"
-                alt="FelixaTouch on tablet device"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-              />
-            </div>
-
-            <Accordion type="single" collapsible className="max-w-3xl mx-auto space-y-4">
-              <AccordionItem value="item-1" className="bg-card rounded-lg px-6 border-2">
-                <AccordionTrigger className="text-left hover:no-underline font-semibold">
-                  What features does our clinic management software offer?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Our software includes features such as appointment scheduling, patient record management, e-prescriptions, automated reminders, queue management, billing, lab management, pharmacy management, and comprehensive reporting tools.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="bg-card rounded-lg px-6 border-2">
-                <AccordionTrigger className="text-left hover:no-underline font-semibold">
-                  Can FelixaTouch help identify areas of revenue growth?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  Yes, FelixaTouch provides detailed analytics and insights that help identify revenue opportunities, track financial performance, and optimize clinic operations for better profitability.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="bg-card rounded-lg px-6 border-2">
-                <AccordionTrigger className="text-left hover:no-underline font-semibold">
-                  How can Felixatouch help increase my clinic&apos;s lead generation and footfall?
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
-                  FelixaTouch enhances patient engagement through automated reminders, bulk messaging via WhatsApp, SMS and Email, and streamlined appointment booking, helping attract and retain more patients.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </section>
-
         {/* Download App Section */}
         <section id="demo" className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
