@@ -30,15 +30,12 @@ export function Header() {
             <Link href="/faqs-best-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               FAQ
             </Link>
-            <Link href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Benefits
-            </Link>
-            <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/clinic-management-software-testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Testimonials
             </Link>
             <ThemeSwitch />
             <Button variant="outline" size="sm" asChild>
-              <Link href="#demo">Login</Link>
+              <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
             <Button size="sm" className="bg-gradient-to-r from-primary to-accent hover:opacity-90" asChild>
               <Link href="#demo">Book Demo</Link>
@@ -90,21 +87,14 @@ export function Header() {
               FAQ
             </Link>
             <Link 
-              href="#benefits" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Benefits
-            </Link>
-            <Link 
-              href="#testimonials" 
+              href="/clinic-management-software-testimonials" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
             </Link>
             <Button variant="outline" size="sm" asChild className="w-full">
-              <Link href="#demo">Login</Link>
+              <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
             <Button size="sm" className="w-full bg-gradient-to-r from-primary to-accent" asChild>
               <Link href="#demo">Book Demo</Link>
