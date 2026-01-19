@@ -33,6 +33,9 @@ export function Header() {
             <Link href="/clinic-management-software-testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Testimonials
             </Link>
+            <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Pricing
+            </Link>
             <ThemeSwitch />
             <Button variant="outline" size="sm" asChild>
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
@@ -92,6 +95,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
+            </Link>
+            <Link 
+              href="/pricing" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Pricing
             </Link>
             <Button variant="outline" size="sm" asChild className="w-full">
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
