@@ -4,11 +4,15 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
 import { Star, Quote, MapPin, Building2, Globe2, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function TestimonialsPage() {
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
+
   const testimonials = [
     {
       name: "Dr. K.T. Ajmal",
@@ -275,8 +279,8 @@ export default function TestimonialsPage() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                      <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-6 font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-                        <Link href="/#demo">Book Free Demo</Link>
+                      <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-6 font-bold shadow-xl hover:shadow-2xl transition-all hover:scale-105" onClick={() => setDemoFormOpen(true)}>
+                        Book Free Demo
                       </Button>
                       <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-6 font-bold transition-all hover:scale-105">
                         <Link href="/best-clinic-software-features">View All Features</Link>
@@ -296,6 +300,8 @@ export default function TestimonialsPage() {
 
         <Footer />
       </div>
+
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="testimonials_page" />
 
       {/* Structured Data */}
       <script

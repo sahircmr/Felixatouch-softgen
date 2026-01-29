@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Activity } from "lucide-react";
 import { useState } from "react";
 import { ThemeSwitch } from "@/components/ThemeSwitch";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -30,18 +32,24 @@ export function Header() {
             <Link href="/faqs-best-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               FAQ
             </Link>
+            <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Blog
+            </Link>
             <Link href="/clinic-management-software-testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Testimonials
             </Link>
             <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
+            <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Contact
+            </Link>
             <ThemeSwitch />
             <Button variant="outline" size="sm" asChild>
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
-            <Button size="sm" className="bg-gradient-to-r from-primary to-accent hover:opacity-90" asChild>
-              <Link href="#demo">Book Demo</Link>
+            <Button size="sm" className="bg-gradient-to-r from-primary to-accent hover:opacity-90" onClick={() => setDemoFormOpen(true)}>
+              Book Demo
             </Button>
           </nav>
 
@@ -90,6 +98,13 @@ export function Header() {
               FAQ
             </Link>
             <Link 
+              href="/blog" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <Link 
               href="/clinic-management-software-testimonials" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
@@ -103,15 +118,31 @@ export function Header() {
             >
               Pricing
             </Link>
+            <Link 
+              href="/contact" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
             <Button variant="outline" size="sm" asChild className="w-full">
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
-            <Button size="sm" className="w-full bg-gradient-to-r from-primary to-accent" asChild>
-              <Link href="#demo">Book Demo</Link>
+            <Button 
+              size="sm" 
+              className="w-full bg-gradient-to-r from-primary to-accent" 
+              onClick={() => {
+                setDemoFormOpen(true);
+                setMobileMenuOpen(false);
+              }}
+            >
+              Book Demo
             </Button>
           </nav>
         </div>
       )}
+
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="navigation" />
     </header>
   );
 }

@@ -4,6 +4,8 @@ import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
+import { useState } from "react";
 import { 
   FileText, 
   Users, 
@@ -25,6 +27,8 @@ import {
 } from "lucide-react";
 
 export default function FeaturesPage() {
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
+
   return (
     <>
       <SEO
@@ -594,8 +598,8 @@ export default function FeaturesPage() {
                 Experience the complete feature suite with a free demo today!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" asChild>
-                  <Link href="/#demo">Book Free Demo</Link>
+                <Button size="lg" variant="secondary" onClick={() => setDemoFormOpen(true)}>
+                  Book Free Demo
                 </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-600" asChild>
                   <Link href="/">Back to Home</Link>
@@ -607,6 +611,8 @@ export default function FeaturesPage() {
 
         <Footer />
       </div>
+
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="features_page" />
     </>
   );
 }

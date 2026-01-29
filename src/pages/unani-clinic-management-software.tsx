@@ -3,6 +3,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useState } from "react";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
 import { 
   FileText, 
   Calendar, 
@@ -27,6 +29,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function UnaniClinicManagementSoftware() {
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
+
   const features = [
     {
       icon: <FileText className="w-8 h-8" />,
@@ -171,7 +175,7 @@ export default function UnaniClinicManagementSoftware() {
                   </p>
                   
                   <div className="flex flex-wrap gap-4">
-                    <Button size="lg" className="group text-lg h-14 px-8">
+                    <Button size="lg" className="group text-lg h-14 px-8" onClick={() => setDemoFormOpen(true)}>
                       Book Demo
                       <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -392,7 +396,7 @@ export default function UnaniClinicManagementSoftware() {
               </p>
               
               <div className="pt-4">
-                <Button size="lg" variant="secondary" className="group text-lg h-14 px-8 bg-white text-emerald-600 hover:bg-slate-50">
+                <Button size="lg" variant="secondary" className="group text-lg h-14 px-8 bg-white text-emerald-600 hover:bg-slate-50" onClick={() => setDemoFormOpen(true)}>
                   Get The Demo Now
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -419,7 +423,7 @@ export default function UnaniClinicManagementSoftware() {
               </p>
               
               <div className="flex flex-wrap justify-center gap-4 pt-4">
-                <Button size="lg" className="group text-lg h-14 px-8">
+                <Button size="lg" className="group text-lg h-14 px-8" onClick={() => setDemoFormOpen(true)}>
                   Schedule Demo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -435,6 +439,8 @@ export default function UnaniClinicManagementSoftware() {
 
         <Footer />
       </div>
+
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="unani_page" />
     </>
   );
 }

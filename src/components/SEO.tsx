@@ -13,9 +13,9 @@ interface SEOProps {
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
 export function SEOElements({
-  title = defaultTitle,
-  description = defaultDescription,
-  image = defaultImage,
+  title = "Clinic Management Software Free | FelixaTouch",
+  description = "Get free cloud-based all-in-one clinic management software. Patient management, booking, doctors, laboratory, pharmacy, ultrasound scanning, procedure management, billing, and analytics. The Patient App, Doctors App, and Nursing App are free. Web and Desktop versions.",
+  image = "/og-image.png",
   url,
 }: SEOProps) {
   return (

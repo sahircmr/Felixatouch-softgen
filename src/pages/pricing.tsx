@@ -21,8 +21,11 @@ import {
   Activity as RadiologyIcon
 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
 
 export default function PricingPage() {
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
   const bucket1Features = [
     "Smart appointment and token-based queue system for smooth patient flow",
     "Real-time token display with live patient progress tracking",
@@ -202,11 +205,9 @@ export default function PricingPage() {
                       </div>
 
                       {/* CTA */}
-                      <Button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold py-6 text-lg group" asChild>
-                        <Link href="#demo">
-                          Get Started
-                          <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </Link>
+                      <Button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold py-6 text-lg group" onClick={() => setDemoFormOpen(true)}>
+                        Get Started
+                        <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
                   </Card>
@@ -287,11 +288,9 @@ export default function PricingPage() {
                       </div>
 
                       {/* CTA */}
-                      <Button className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold py-6 text-lg group" asChild>
-                        <Link href="#demo">
-                          Get Started
-                          <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                        </Link>
+                      <Button className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold py-6 text-lg group" onClick={() => setDemoFormOpen(true)}>
+                        Get Started
+                        <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
                   </Card>
@@ -444,11 +443,9 @@ export default function PricingPage() {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Button size="lg" className="bg-white text-purple-700 hover:bg-white/90 font-bold px-8 py-6 text-lg group" asChild>
-                    <Link href="#demo">
-                      Book Free Demo
-                      <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                  <Button size="lg" className="bg-white text-purple-700 hover:bg-white/90 font-bold px-8 py-6 text-lg group" onClick={() => setDemoFormOpen(true)}>
+                    Book Free Demo
+                    <TrendingUp className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                   
                   <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-bold px-8 py-6 text-lg" asChild>
@@ -468,6 +465,8 @@ export default function PricingPage() {
 
         <Footer />
       </div>
+
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="pricing_page" />
     </>
   );
 }
