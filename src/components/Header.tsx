@@ -44,6 +44,9 @@ export function Header() {
             <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
+            <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              About
+            </Link>
             <ThemeSwitch />
             <Button variant="outline" size="sm" asChild>
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
@@ -124,6 +127,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
+            </Link>
+            <Link 
+              href="/about" 
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
             </Link>
             <Button variant="outline" size="sm" asChild className="w-full">
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
