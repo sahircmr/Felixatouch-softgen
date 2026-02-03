@@ -1,98 +1,173 @@
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { HelpCircle, Shield, TrendingUp, Users, Zap, Globe, HeadphonesIcon, FileText, CreditCard, GraduationCap } from "lucide-react";
+import { HelpCircle, Shield, TrendingUp, Users, Zap, Globe, HeadphonesIcon, FileText, CreditCard, Cloud, MessageSquare, Workflow, Lock, Activity } from "lucide-react";
 
 export default function FAQPage() {
   const faqCategories = [
     {
-      category: "Features & Capabilities",
-      icon: Zap,
+      category: "General Overview",
+      icon: HelpCircle,
       faqs: [
         {
-          question: "What features does your clinic management software offer?",
-          answer: "Our software includes features such as appointment scheduling, patient record management, e-prescriptions, automated reminders, queue management, billing, reporting tools and other relevant features."
+          question: "What is Felixatouch?",
+          answer: "Felixatouch is a comprehensive, 100% cloud-based clinic management software designed to streamline healthcare operations. It offers a suite of tools including Electronic Medical Records (EMR), queue management, billing, and lab/pharmacy integration to help healthcare providers optimize their practice and improve patient care."
         },
         {
-          question: "Can I generate reports for financial analysis and patient data?",
-          answer: "Yes, our software provides detailed revenue analytics and customizable reporting tools to help you track performance, trends, and patient data efficiently."
+          question: "Is the software cloud-based?",
+          answer: "Yes, Felixatouch is 100% cloud-based. This means all your data is stored securely in the cloud, and you can access your clinic's records from anywhere at any time using an internet connection."
         },
         {
-          question: "How can I manage patient appointments and queues?",
-          answer: "Our software simplifies appointment scheduling, rescheduling, and queue management, ensuring a smooth and efficient workflow for your clinic."
+          question: "How many devices can I connect to the system?",
+          answer: "Felixatouch allows you to connect with an unlimited number of devices (desktops, laptops, and tablets) regardless of their location, ensuring seamless access for your entire staff."
         }
       ]
     },
     {
-      category: "Revenue & Growth",
-      icon: TrendingUp,
+      category: "Clinical Features",
+      icon: FileText,
       faqs: [
         {
-          question: "Can Felixatouch help identify areas of revenue growth?",
-          answer: "Yes! Felixatouch analyzes your clinic's financial data to identify trends, gaps, and opportunities for growth. You can pinpoint underperforming areas and implement targeted strategies to improve revenue, whether through pricing adjustments, service offerings, or enhanced patient retention."
+          question: "Does Felixatouch support Electronic Medical Records (EMR)?",
+          answer: "Yes. The software includes an advanced EMR system that allows for secure management of patient data, medical history, and treatment plans. It is designed for easy updates and compliance with healthcare standards."
         },
         {
-          question: "How can Felixatouch help increase my clinic's lead generation and footfall?",
-          answer: "Felixatouch boosts your clinic's digital presence through targeted marketing strategies that attract more leads and increase footfall. By optimizing your clinic's online visibility, engaging with potential patients, and converting them into loyal clients, Felixatouch helps drive consistent revenue growth."
+          question: "Can I create digital prescriptions?",
+          answer: "Absolutely. The 'Impressive Prescription' feature allows doctors to generate professional, clear, and visually appealing prescriptions in just a few clicks using customizable templates."
         },
         {
-          question: "Can I track real-time revenue data with Felixatouch?",
-          answer: "Yes! Felixatouch offers real-time revenue tracking, allowing you to monitor your clinic's financial performance at any time. Stay on top of key metrics like revenue, patient volume, and more, so you can make timely decisions that optimize your clinic's revenue."
-        },
-        {
-          question: "Will using Felixatouch reduce administrative costs?",
-          answer: "Yes! Felixatouch helps automate many administrative tasks such as billing, appointment scheduling, and patient record management. This reduces the need for manual processes, saving time and resources, which in turn lowers administrative costs and increases overall clinic revenue."
+          question: "How does the software handle patient follow-ups?",
+          answer: "The 'Next-Visit Setup' allows doctors to schedule follow-up appointments instantly during the consultation, ensuring patient adherence to treatment plans and reducing drop-offs."
         }
       ]
     },
     {
-      category: "Security & Compliance",
-      icon: Shield,
+      category: "Operations & Workflow",
+      icon: Workflow,
       faqs: [
         {
-          question: "How secure is the patient data in the software?",
-          answer: "Patient data is protected through advanced encryption methods and secure access controls, ensuring compliance with global standards and safeguarding sensitive information."
+          question: "How does the Queue Management system work?",
+          answer: "Felixatouch offers an Easy Queue & Appointment Management system where the front desk can generate, prioritize, or pause queues. It also integrates with a Token Display System to notify patients of their turn in real-time, reducing reception crowding."
         },
         {
-          question: "Is the software compatible with my existing systems?",
-          answer: "Yes, FelixaTouch is designed to integrate seamlessly with your existing tools and systems, ensuring smooth transitions and minimal disruption."
-        }
-      ]
-    },
-    {
-      category: "Access & Availability",
-      icon: Globe,
-      faqs: [
-        {
-          question: "Can I access the software remotely?",
-          answer: "Yes, our cloud-based system allows you to access patient records, appointments, and other features securely from any location with an internet connection."
-        }
-      ]
-    },
-    {
-      category: "Training & Support",
-      icon: GraduationCap,
-      faqs: [
-        {
-          question: "Is training provided for new users?",
-          answer: "Absolutely! We offer comprehensive training and support to ensure your team can fully utilize the software's features from day one. However, FelixaTouch is designed with user-friendly interfaces, making it learn easy and navigate the system."
+          question: "Does it include Lab and Pharmacy management?",
+          answer: "Yes. Lab Management enables digital test ordering, sample tracking, and direct storage of results into the patient's EMR. Pharmacy Management tracks stock levels, expiry dates, and real-time sales to prevent leakages and ensure timely medicine dispensing."
         },
         {
-          question: "How do I get support if I have issues with the software?",
-          answer: "Our dedicated support team is available 24/7 via phone, email, or live chat to assist with any technical issues or questions you may have."
+          question: "Can I manage clinic inventory?",
+          answer: "Yes, the Inventory Management tool allows you to monitor stocks of medicines, consumables, and lab items. It includes automated reorder alerts to prevent shortages and minimize wastage."
         }
       ]
     },
     {
-      category: "Payments & Billing",
+      category: "Billing & Finance",
       icon: CreditCard,
       faqs: [
         {
-          question: "Can the software handle both online and offline payments?",
-          answer: "Yes, FelixaTouch supports flexible payment options, allowing both online and cash payments to be processed seamlessly and securely."
+          question: "What billing features are included?",
+          answer: "Felixatouch provides a flexible payment and billing system. It features Charge Capture Billing, which records every service, procedure, and consultation in real-time to minimize revenue leakage."
+        },
+        {
+          question: "Does the software support insurance claims?",
+          answer: "Yes. The Insurance Management module helps you handle claims, approvals, and settlements within the platform, supporting multiple insurers and simplifying documentation."
+        },
+        {
+          question: "Can I track staff incentives?",
+          answer: "Yes, there is an Incentive & Commission Management feature that automatically calculates commissions for doctors, technicians, or staff based on services, sales, or procedures."
+        }
+      ]
+    },
+    {
+      category: "Reporting & Analytics",
+      icon: Activity,
+      faqs: [
+        {
+          question: "What kind of insights can I get from the software?",
+          answer: "The software provides Analytics Dashboards for real-time monitoring of clinic performance, Revenue Dashboards to visualize income from consultations, labs, and pharmacy, and Custom Date-Wise Reports with detailed reports filtered by daily, weekly, or monthly ranges to analyze expenses and patient inflow."
+        }
+      ]
+    },
+    {
+      category: "Security & Revenue Protection",
+      icon: Lock,
+      faqs: [
+        {
+          question: "How does Felixatouch safeguard clinic owners from revenue leakage?",
+          answer: "Felixatouch acts as a digital watchdog by utilizing an Integrated Charge Capture module. This ensures that every clinical action—whether it's a lab test, a pharmacy dispense, or a minor procedure—is automatically linked to the patient's bill. Because the financial charge is triggered the moment the doctor saves the order, it is impossible for staff to 'forget' to bill for a service, effectively plugging potential income gaps."
+        },
+        {
+          question: "In what ways does the software prevent employee malpractice and fraud?",
+          answer: "The system is designed with multiple layers of accountability: Audit Trails (every entry, edit, or deletion is logged with a 'digital footprint,' showing exactly who made the change and when), Role-Based Access (restrict staff permissions so only authorized personnel can handle billing, view sensitive data, or apply discounts), Standardized Pricing (pre-set price lists prevent staff from manually altering costs or providing unauthorized 'custom' pricing), and Inventory Reconciliation (real-time tracking ensures that no medicine or lab consumable leaves the clinic without a corresponding digital record and payment)."
+        },
+        {
+          question: "Can I monitor my clinic's finances if I am not physically present?",
+          answer: "Yes. Since Felixatouch is 100% cloud-based, clinic owners can access the Real-Time Analytics Dashboard from any location via a smartphone or laptop. This allows you to monitor live patient flow, total collections, and pending dues instantly, ensuring you always have a 'pulse' on your business regardless of where you are."
+        }
+      ]
+    },
+    {
+      category: "Patient Engagement",
+      icon: Users,
+      faqs: [
+        {
+          question: "How does Felixatouch help in communicating with patients?",
+          answer: "The Engagement Messaging feature allows you to stay connected with patients through automated SMS, email, or WhatsApp. You can send appointment confirmations, health tips, and promotional offers to enhance your clinic's branding."
+        },
+        {
+          question: "Is there a limit on patient records?",
+          answer: "No. Felixatouch allows you to store an unlimited number of patient records securely."
+        }
+      ]
+    },
+    {
+      category: "WhatsApp Integration & Communication",
+      icon: MessageSquare,
+      faqs: [
+        {
+          question: "Does Felixatouch integrate with WhatsApp?",
+          answer: "Yes, Felixatouch features a robust WhatsApp integration designed to automate patient communication and improve engagement. This allows the clinic to send important updates directly to a patient's mobile phone instantly."
+        },
+        {
+          question: "What automated message templates are included?",
+          answer: "The software comes with pre-configured templates for essential clinic operations, including: Prescription Delivery (send digital prescriptions directly to the patient's WhatsApp immediately after their consultation), Booking Notifications (automatically send appointment confirmations and reminders to reduce 'no-shows'), Lab Report Delivery (notify patients as soon as their results are ready and deliver the digital report securely), and Birthday Wishes (automate personalized greetings to patients to build long-term loyalty and a personal touch)."
+        },
+        {
+          question: "Can a clinic get a customized WhatsApp integration service?",
+          answer: "Yes. Beyond the standard templates, clinics can request customized WhatsApp integration services. This allows you to create and deliver additional message templates tailored to your specific workflow, promotional campaigns, or specialized patient instructions."
+        },
+        {
+          question: "Is WhatsApp messaging more effective than SMS?",
+          answer: "While Felixatouch supports both, WhatsApp integration typically sees higher open rates and allows for easier delivery of rich media, such as PDF lab reports and prescriptions, making it more convenient for both the clinic and the patient."
+        }
+      ]
+    },
+    {
+      category: "Complete Clinical Workflow Management",
+      icon: Workflow,
+      faqs: [
+        {
+          question: "Can I consider Felixatouch to manage my entire clinical workflow?",
+          answer: "Yes. Felixatouch is built as an all-in-one integrated platform that connects every department of your clinic. It eliminates manual handovers and ensures that data flows seamlessly from the front desk to the specialized treatment rooms."
+        },
+        {
+          question: "How does the integrated workflow look in practice?",
+          answer: "The software synchronizes the following steps into one unified journey: Patient Intake (seamless patient registration, appointment scheduling, and live token management), Doctor Consultation (doctors use an advanced EMR to record notes and orders), and Digital Orders (once the doctor hits 'Save,' orders are instantly routed to Pharmacy for immediate fulfillment, Laboratory for sample collection and testing, Procedure Room for minor treatments or nursing care, and Ultrasound & Radiology for specialized scanning orders)."
+        },
+        {
+          question: "What is the 'Charge Capture' module?",
+          answer: "The Charge Capture module is a financial safeguard that ensures every service provided—whether it's a consultation, a lab test, or a procedure—is automatically added to the patient's bill. This provides Error-Free Billing (no more forgotten items or manual entry mistakes) and Malpractice-Free Security (by automating the link between the clinical order and the final invoice, the system prevents financial leakages and ensures total transparency in clinic revenue)."
+        }
+      ]
+    },
+    {
+      category: "Support & Getting Started",
+      icon: HeadphonesIcon,
+      faqs: [
+        {
+          question: "How can I see a demo of the software?",
+          answer: "You can request a free demo by filling out the contact form on the Felixatouch website or by contacting their support team at +91 8137077217 or support@intpurple.com."
         }
       ]
     }
@@ -203,7 +278,7 @@ export default function FAQPage() {
                         className="bg-white text-brand-primary hover:bg-slate-50 font-semibold text-lg px-8 py-6 h-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                         asChild
                       >
-                        <a href="#demo">Book a Demo</a>
+                        <a href="tel:+918137077217">Call +91 8137077217</a>
                       </Button>
                       <Button
                         size="lg"
@@ -211,7 +286,7 @@ export default function FAQPage() {
                         className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-primary font-semibold text-lg px-8 py-6 h-auto rounded-xl transition-all duration-300"
                         asChild
                       >
-                        <a href="mailto:support@felixatouch.com">Contact Support</a>
+                        <a href="mailto:support@intpurple.com">Email Support</a>
                       </Button>
                     </div>
                   </div>
@@ -229,7 +304,7 @@ export default function FAQPage() {
                 </h2>
                 
                 <div className="grid md:grid-cols-3 gap-6">
-                  <Link
+                  <a
                     href="/best-clinic-software-features"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-brand-primary"
                   >
@@ -242,9 +317,9 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Discover all the powerful features
                     </p>
-                  </Link>
+                  </a>
 
-                  <Link
+                  <a
                     href="/dental-clinic-management-software"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-500"
                   >
@@ -257,9 +332,9 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Specialized dental clinic solution
                     </p>
-                  </Link>
+                  </a>
 
-                  <Link
+                  <a
                     href="/unani-clinic-management-software"
                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-600"
                   >
@@ -272,7 +347,7 @@ export default function FAQPage() {
                     <p className="text-slate-600 dark:text-slate-300">
                       Tailored for Unani practices
                     </p>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
