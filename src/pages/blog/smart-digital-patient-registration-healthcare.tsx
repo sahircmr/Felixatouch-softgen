@@ -243,14 +243,22 @@ export default function SmartDigitalPatientRegistration() {
                       </ol>
                     </div>
 
-                    {/* Screenshot Placeholder */}
-                    <div className="bg-slate-100 dark:bg-slate-900 rounded-xl p-8 border-2 border-dashed border-slate-300 dark:border-slate-700 mb-6">
-                      <div className="text-center">
-                        <Database className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-                        <p className="text-slate-600 dark:text-slate-400 font-semibold mb-2">
+                    {/* Screenshot - Complete Patient Registration */}
+                    <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-xl overflow-hidden border-2 border-slate-200 dark:border-slate-700 mb-6 shadow-lg">
+                      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                        <Image
+                          src="/complete-patient-registration-felixatouch.png"
+                          alt="Complete Patient Registration Screen in Felixatouch"
+                          fill
+                          className="object-contain"
+                          priority
+                        />
+                      </div>
+                      <div className="p-4 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 font-semibold text-center">
                           Figure 1: Complete Patient Registration Screen in Felixatouch
                         </p>
-                        <p className="text-sm text-slate-500 dark:text-slate-500">
+                        <p className="text-xs text-slate-500 dark:text-slate-500 text-center mt-1">
                           Comprehensive form with demographic information, contact details, and medical history fields
                         </p>
                       </div>
@@ -330,14 +338,22 @@ export default function SmartDigitalPatientRegistration() {
                       </ul>
                     </div>
 
-                    {/* Screenshot Placeholder */}
-                    <div className="bg-slate-100 dark:bg-slate-900 rounded-xl p-8 border-2 border-dashed border-slate-300 dark:border-slate-700 mb-6">
-                      <div className="text-center">
-                        <Smartphone className="w-16 h-16 text-slate-400 mx-auto mb-4" />
-                        <p className="text-slate-600 dark:text-slate-400 font-semibold mb-2">
+                    {/* Screenshot - Spot Patient Registration */}
+                    <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-xl overflow-hidden border-2 border-slate-200 dark:border-slate-700 mb-6 shadow-lg">
+                      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                        <Image
+                          src="/spot-registration-felixatouch.png"
+                          alt="Spot Patient Registration Screen in Felixatouch"
+                          fill
+                          className="object-contain"
+                          priority
+                        />
+                      </div>
+                      <div className="p-4 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 font-semibold text-center">
                           Figure 2: Spot Patient Registration Screen in Felixatouch
                         </p>
-                        <p className="text-sm text-slate-500 dark:text-slate-500">
+                        <p className="text-xs text-slate-500 dark:text-slate-500 text-center mt-1">
                           Minimal form with just name, phone, and gender for quick walk-in registrations
                         </p>
                       </div>
