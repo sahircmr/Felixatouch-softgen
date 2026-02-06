@@ -20,6 +20,7 @@ import {
   Globe
 } from "lucide-react";
 import { useState } from "react";
+import { Turnstile } from "nextjs-turnstile";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,31 +33,50 @@ export default function ContactPage() {
     subject: "",
     message: "",
   });
-
+  const [cfToken, setCfToken] = useState<string | null>(null);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual API call)
-    await new Promise(resolve => setTimeout(resolve, 2000));
-
-    console.log("Contact form submitted:", formData);
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        clinicName: "",
-        subject: "",
-        message: "",
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        // We add formType: "contact" so your Google Script knows where it came from
+        body: JSON.stringify({ 
+          ...formData, 
+          cfToken,
+          formType: "contact" 
+        }),
       });
-    }, 3000);
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setIsSubmitted(true);
+        // Reset form data
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          clinicName: "",
+          subject: "",
+          message: "",
+        });
+
+        // Hide the success message after 5 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      } else {
+        throw new Error(result.error || "Submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      alert("Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -282,7 +302,12 @@ export default function ContactPage() {
                             className="border-border focus:ring-primary focus:border-primary resize-none"
                           />
                         </div>
-
+                        <div className="flex justify-center my-4">
+                <Turnstile
+                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                  onSuccess={(token) => setCfToken(token)}
+                />
+              </div>
                         {/* Submit Button */}
                         <Button
                           type="submit"

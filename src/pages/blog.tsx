@@ -5,8 +5,29 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function BlogPage() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubscribe = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  
+  await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ 
+      email, 
+      formType: "subscription",
+      fullName: "Subscriber" 
+    }),
+  });
+  
+  setIsSubmitting(false);
+  setEmail("");
+  alert("Subscribed!");
+};
   // Placeholder blog posts - will be replaced with actual blog content
   const blogPosts = [
     {
@@ -161,16 +182,24 @@ export default function BlogPage() {
                 <p className="text-xl text-muted-foreground">
                   Subscribe to our newsletter for the latest updates on healthcare technology and clinic management best practices.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90">
-                    Subscribe
-                  </Button>
-                </div>
+                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+        <input
+          type="email"
+          required
+          value={email} // Added value
+          onChange={(e) => setEmail(e.target.value)} // Added onChange
+          placeholder="Enter your email"
+          className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+        <Button 
+          type="submit" // Added type
+          disabled={isSubmitting} // Added disabled state
+          size="lg" 
+          className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90"
+        >
+          {isSubmitting ? "Subscribing..." : "Subscribe"}
+        </Button>
+      </form>
               </div>
             </div>
           </section>

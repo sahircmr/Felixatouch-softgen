@@ -47,7 +47,8 @@ export function Header() {
             <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
+            
             <Button variant="outline" size="sm" asChild>
               <a href="https://clinic.felixatouch.com/" target="_blank" rel="noopener noreferrer">Login</a>
             </Button>
