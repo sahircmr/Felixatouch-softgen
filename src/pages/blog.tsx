@@ -11,6 +11,16 @@ export default function BlogPage() {
   const blogPosts = [
     {
       id: 1,
+      title: "What is the Smart and Digital Approach to Patient Registration in Healthcare?",
+      excerpt: "Discover how smart digital patient registration transforms healthcare operations. Learn about complete and spot registration workflows in FelixaTouch, designed for fast, flexible, and EMR-ready patient onboarding.",
+      image: "/og-image.png",
+      category: "Patient Registration",
+      date: "2026-02-05",
+      readTime: "8 min read",
+      slug: "smart-digital-patient-registration-healthcare"
+    },
+    {
+      id: 2,
       title: "10 Ways Clinic Management Software Improves Patient Care",
       excerpt: "Discover how modern clinic management software enhances patient experience, reduces wait times, and improves overall healthcare delivery.",
       image: "/og-image.png",
@@ -20,7 +30,7 @@ export default function BlogPage() {
       slug: "improve-patient-care-clinic-software"
     },
     {
-      id: 2,
+      id: 3,
       title: "Complete Guide to Digital Prescriptions in 2026",
       excerpt: "Everything you need to know about transitioning from paper to digital prescriptions, including benefits, best practices, and compliance.",
       image: "/og-image.png",
@@ -30,7 +40,7 @@ export default function BlogPage() {
       slug: "digital-prescriptions-guide"
     },
     {
-      id: 3,
+      id: 4,
       title: "Why Unani Clinics Need Specialized Management Software",
       excerpt: "Learn how specialized features for Unani medicine practices can streamline operations and preserve traditional treatment methods.",
       image: "/og-image.png",
