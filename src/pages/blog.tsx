@@ -5,12 +5,43 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function BlogPage() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubscribe = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  
+  await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ 
+      email, 
+      formType: "subscription",
+      fullName: "Subscriber" 
+    }),
+  });
+  
+  setIsSubmitting(false);
+  setEmail("");
+  alert("Subscribed!");
+};
   // Placeholder blog posts - will be replaced with actual blog content
   const blogPosts = [
     {
       id: 1,
+      title: "What is the Smart and Digital Approach to Patient Registration in Healthcare?",
+      excerpt: "Discover how smart digital patient registration transforms healthcare operations. Learn about complete and spot registration workflows in FelixaTouch, designed for fast, flexible, and EMR-ready patient onboarding.",
+      image: "/og-image.png",
+      category: "Patient Registration",
+      date: "2026-02-05",
+      readTime: "8 min read",
+      slug: "smart-digital-patient-registration-healthcare"
+    },
+    {
+      id: 2,
       title: "10 Ways Clinic Management Software Improves Patient Care",
       excerpt: "Discover how modern clinic management software enhances patient experience, reduces wait times, and improves overall healthcare delivery.",
       image: "/og-image.png",
@@ -20,7 +51,7 @@ export default function BlogPage() {
       slug: "improve-patient-care-clinic-software"
     },
     {
-      id: 2,
+      id: 3,
       title: "Complete Guide to Digital Prescriptions in 2026",
       excerpt: "Everything you need to know about transitioning from paper to digital prescriptions, including benefits, best practices, and compliance.",
       image: "/og-image.png",
@@ -30,7 +61,7 @@ export default function BlogPage() {
       slug: "digital-prescriptions-guide"
     },
     {
-      id: 3,
+      id: 4,
       title: "Why Unani Clinics Need Specialized Management Software",
       excerpt: "Learn how specialized features for Unani medicine practices can streamline operations and preserve traditional treatment methods.",
       image: "/og-image.png",
@@ -151,16 +182,24 @@ export default function BlogPage() {
                 <p className="text-xl text-muted-foreground">
                   Subscribe to our newsletter for the latest updates on healthcare technology and clinic management best practices.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90">
-                    Subscribe
-                  </Button>
-                </div>
+                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+        <input
+          type="email"
+          required
+          value={email} // Added value
+          onChange={(e) => setEmail(e.target.value)} // Added onChange
+          placeholder="Enter your email"
+          className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+        <Button 
+          type="submit" // Added type
+          disabled={isSubmitting} // Added disabled state
+          size="lg" 
+          className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90"
+        >
+          {isSubmitting ? "Subscribing..." : "Subscribe"}
+        </Button>
+      </form>
               </div>
             </div>
           </section>

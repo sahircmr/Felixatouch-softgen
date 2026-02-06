@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle2, Loader2, Building2, Mail, Phone, User, MapPin, Briefcase } from "lucide-react";
+import { Turnstile } from "nextjs-turnstile";
 
 interface LeadGenerationFormProps {
   open: boolean;
@@ -26,34 +27,60 @@ export function LeadGenerationForm({ open, onOpenChange, source = "website" }: L
     teamSize: "",
     message: "",
   });
-
+  const [cfToken, setCfToken] = useState<string | null>(null);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!cfToken) {
+      alert("Please complete the security check.");
+      return;
+    }
     setIsSubmitting(true);
 
     // Simulate form submission (replace with actual API call)
-    await new Promise(resolve => setTimeout(resolve, 2000));
-
-    console.log("Form submitted:", { ...formData, source });
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        clinicName: "",
-        clinicType: "",
-        location: "",
-        teamSize: "",
-        message: "",
+    // await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        // body: JSON.stringify({ ...formData, source }),
+        body: JSON.stringify({ ...formData,formType: "demo", cfToken, source: "website" }),
       });
-      onOpenChange(false);
-    }, 3000);
+      const result = await response.json();
+      if (result.status === "success") {
+        console.log("Form submitted successfully:", result);
+        console.log("Form submitted:", { ...formData, source });
+
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            fullName: "",
+            email: "",
+            phone: "",
+            clinicName: "",
+            clinicType: "",
+            location: "",
+            teamSize: "",
+            message: "",
+          });
+          onOpenChange(false);
+        }, 3000);
+      } else {
+        console.log("Form submission failed:", result);
+        throw new Error("Form submission failed");
+      }
+
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting the form. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+
+
   };
 
   const handleChange = (field: string, value: string) => {
@@ -214,7 +241,12 @@ export function LeadGenerationForm({ open, onOpenChange, source = "website" }: L
                   className="border-slate-300 dark:border-slate-700 focus:ring-brand-primary focus:border-brand-primary resize-none"
                 />
               </div>
-
+              <div className="flex justify-center my-4">
+                <Turnstile
+                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                  onSuccess={(token) => setCfToken(token)}
+                />
+              </div>
               {/* Submit Button */}
               <Button
                 type="submit"
