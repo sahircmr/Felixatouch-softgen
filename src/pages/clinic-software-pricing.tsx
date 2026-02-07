@@ -90,7 +90,7 @@ export default function PricingPage() {
       <SEO
         title="Pricing & Plans - Affordable Clinic Management Software | FelixaTouch"
         description="Transparent pricing for FelixaTouch clinic management software. Choose from flexible plans for small clinics to large hospitals. Bucket 1: ₹10,000 | Bucket 2: ₹13,000. No hidden fees. Get started today!"
-        url="/pricing"
+        url="/clinic-software-pricing"
       />
       <div className="min-h-screen bg-background">
         <Header />

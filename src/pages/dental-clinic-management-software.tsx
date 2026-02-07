@@ -276,7 +276,7 @@ export default function DentalClinicManagementSoftware() {
                 {features.map((feature, index) => (
                   <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-brand-primary/50 group">
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/10 to-emerald-600/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                      <div className="text-brand-primary">
+                      <div className="text-emerald-primary">
                         {feature.icon}
                       </div>
                     </div>

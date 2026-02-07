@@ -257,7 +257,7 @@ export default function FAQPage() {
           <section className="py-20">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-brand-primary via-purple-600 to-emerald-600 p-12 md:p-16 text-center">
+                <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-600 to-emerald-600 p-12 md:p-16 text-center">
                   <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20" />
                   
                   <div className="relative z-10 space-y-6">
@@ -307,9 +307,9 @@ export default function FAQPage() {
                 <div className="grid md:grid-cols-3 gap-6">
                   <Link
                     href="/best-clinic-software-features"
-                    className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-brand-primary"
+                     className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-500"
                   >
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-brand-primary to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Zap className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
@@ -337,9 +337,9 @@ export default function FAQPage() {
 
                   <Link
                     href="/unani-clinic-management-software"
-                    className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-600"
+                    className="group bg-white dark:bg-slate-800 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-emerald-500"
                   >
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-600 to-green-700 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Users className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">

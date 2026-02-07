@@ -32,19 +32,19 @@ export function Header() {
             <Link href="/faqs-best-clinic-management-software" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               FAQ
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/felixatouch-clinic-software-blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Blog
             </Link>
             <Link href="/clinic-management-software-testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Testimonials
             </Link>
-            <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/clinic-software-pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
-            <Link href="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/contact-felixatouch" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
-            <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/about-clinic-management-software-in-india" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
             {/* <ThemeSwitch /> */}
@@ -102,7 +102,7 @@ export function Header() {
               FAQ
             </Link>
             <Link 
-              href="/blog" 
+              href="/felixatouch-clinic-software-blog" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -116,21 +116,21 @@ export function Header() {
               Testimonials
             </Link>
             <Link 
-              href="/pricing" 
+              href="/clinic-software-pricing" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link 
-              href="/contact" 
+              href="/contact-felixatouch" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
             <Link 
-              href="/about" 
+              href="/about-clinic-management-software-in-india" 
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
