@@ -88,7 +88,7 @@ export default function ContactPage() {
       <SEO
         title="Contact Us - Get in Touch | FelixaTouch"
         description="Have questions about FelixaTouch clinic management software? Contact our team for demos, support, or sales inquiries. Available in India, UAE, Qatar, Bahrain, and KSA."
-        url="/contact"
+        url="/contact-felixatouch"
       />
 
       <div className="min-h-screen flex flex-col bg-background">
@@ -277,12 +277,12 @@ export default function ContactPage() {
                               <SelectValue placeholder="Select a subject" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="demo">Request a Demo</SelectItem>
-                              <SelectItem value="sales">Sales Inquiry</SelectItem>
-                              <SelectItem value="support">Technical Support</SelectItem>
-                              <SelectItem value="pricing">Pricing Information</SelectItem>
-                              <SelectItem value="partnership">Partnership Opportunities</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
+                              <SelectItem value="Request a demo">Request a Demo</SelectItem>
+                              <SelectItem value="Sales Inquiry">Sales Inquiry</SelectItem>
+                              <SelectItem value="Technical Support">Technical Support</SelectItem>
+                              <SelectItem value="Pricing Information">Pricing Information</SelectItem>
+                              <SelectItem value="Partnership Opportunities">Partnership Opportunities</SelectItem>
+                              <SelectItem value="Other">Other</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>

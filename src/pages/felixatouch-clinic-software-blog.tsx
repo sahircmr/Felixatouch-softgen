@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
+import { Calendar, Clock, ArrowRight, BookOpen, CheckCircle2, Loader2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -10,24 +10,34 @@ import { useState } from "react";
 export default function BlogPage() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubscribe = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-  
-  await fetch("/api/contact", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ 
-      email, 
-      formType: "subscription",
-      fullName: "Subscriber" 
-    }),
-  });
-  
-  setIsSubmitting(false);
-  setEmail("");
-  alert("Subscribed!");
-};
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          formType: "subscription",
+          fullName: "Subscriber"
+        }),
+      });
+
+      const result = await response.json();
+      if (result.status === "success") {
+        setIsSubmitted(true); // CHANGE: Set success state
+        setEmail("");
+        setTimeout(() => setIsSubmitted(false), 5000); // CHANGE: Reset after 5s
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   // Placeholder blog posts - will be replaced with actual blog content
   const blogPosts = [
     {
@@ -40,36 +50,36 @@ export default function BlogPage() {
       readTime: "8 min read",
       slug: "smart-digital-patient-registration-healthcare"
     },
-    {
-      id: 2,
-      title: "10 Ways Clinic Management Software Improves Patient Care",
-      excerpt: "Discover how modern clinic management software enhances patient experience, reduces wait times, and improves overall healthcare delivery.",
-      image: "/og-image.png",
-      category: "Patient Care",
-      date: "2026-01-20",
-      readTime: "5 min read",
-      slug: "improve-patient-care-clinic-software"
-    },
-    {
-      id: 3,
-      title: "Complete Guide to Digital Prescriptions in 2026",
-      excerpt: "Everything you need to know about transitioning from paper to digital prescriptions, including benefits, best practices, and compliance.",
-      image: "/og-image.png",
-      category: "Digital Health",
-      date: "2026-01-18",
-      readTime: "7 min read",
-      slug: "digital-prescriptions-guide"
-    },
-    {
-      id: 4,
-      title: "Why Unani Clinics Need Specialized Management Software",
-      excerpt: "Learn how specialized features for Unani medicine practices can streamline operations and preserve traditional treatment methods.",
-      image: "/og-image.png",
-      category: "Unani Medicine",
-      date: "2026-01-15",
-      readTime: "6 min read",
-      slug: "unani-clinic-software-benefits"
-    }
+    // {
+    //   id: 2,
+    //   title: "10 Ways Clinic Management Software Improves Patient Care",
+    //   excerpt: "Discover how modern clinic management software enhances patient experience, reduces wait times, and improves overall healthcare delivery.",
+    //   image: "/og-image.png",
+    //   category: "Patient Care",
+    //   date: "2026-01-20",
+    //   readTime: "5 min read",
+    //   slug: "improve-patient-care-clinic-software"
+    // },
+    // {
+    //   id: 3,
+    //   title: "Complete Guide to Digital Prescriptions in 2026",
+    //   excerpt: "Everything you need to know about transitioning from paper to digital prescriptions, including benefits, best practices, and compliance.",
+    //   image: "/og-image.png",
+    //   category: "Digital Health",
+    //   date: "2026-01-18",
+    //   readTime: "7 min read",
+    //   slug: "digital-prescriptions-guide"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Why Unani Clinics Need Specialized Management Software",
+    //   excerpt: "Learn how specialized features for Unani medicine practices can streamline operations and preserve traditional treatment methods.",
+    //   image: "/og-image.png",
+    //   category: "Unani Medicine",
+    //   date: "2026-01-15",
+    //   readTime: "6 min read",
+    //   slug: "unani-clinic-software-benefits"
+    // }
   ];
 
   return (
@@ -77,7 +87,7 @@ export default function BlogPage() {
       <SEO
         title="Blog - Healthcare Technology Insights | FelixaTouch"
         description="Stay updated with the latest insights on clinic management, healthcare technology, digital health trends, and best practices for running successful medical practices."
-        url="/blog"
+        url="/felixatouch-clinic-software-blog"
       />
 
       <div className="min-h-screen flex flex-col bg-background">
@@ -108,7 +118,7 @@ export default function BlogPage() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {blogPosts.map((post) => (
-                  <article 
+                  <article
                     key={post.id}
                     className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                   >
@@ -176,30 +186,47 @@ export default function BlogPage() {
           <section className="py-20 bg-gradient-to-br from-primary/10 via-accent/10 to-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-3xl mx-auto text-center space-y-6">
-                <h2 className="text-4xl md:text-5xl font-black text-foreground">
-                  Stay <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Informed</span>
-                </h2>
-                <p className="text-xl text-muted-foreground">
-                  Subscribe to our newsletter for the latest updates on healthcare technology and clinic management best practices.
-                </p>
-                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-        <input
-          type="email"
-          required
-          value={email} // Added value
-          onChange={(e) => setEmail(e.target.value)} // Added onChange
-          placeholder="Enter your email"
-          className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-        />
-        <Button 
-          type="submit" // Added type
-          disabled={isSubmitting} // Added disabled state
-          size="lg" 
-          className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90"
-        >
-          {isSubmitting ? "Subscribing..." : "Subscribe"}
-        </Button>
-      </form>
+                {!isSubmitted ? (
+                  <>
+                    <h2 className="text-4xl md:text-5xl font-black text-foreground">
+                      Stay <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Informed</span>
+                    </h2>
+                    <p className="text-xl text-muted-foreground">
+                      Subscribe to our newsletter for the latest updates on healthcare technology and clinic management best practices.
+                    </p>
+                    <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+                      <input
+                        type="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                      />
+                      <Button
+                        type="submit"
+                        disabled={isSubmitting}
+                        size="lg"
+                        className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                      >
+                        {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : "Subscribe"}
+                      </Button>
+                    </form>
+                  </>
+                ) : (
+                  /* CHANGE: Success UI (Matches Contact Page Style) */
+                  <div className="py-8 text-center space-y-4 animate-in fade-in zoom-in duration-500">
+                    <div className="flex justify-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/25">
+                        <CheckCircle2 className="w-10 h-10 text-white" />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-black text-foreground">Thank You!</h3>
+                      <p className="text-muted-foreground">You have successfully subscribed to our newsletter.</p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </section>

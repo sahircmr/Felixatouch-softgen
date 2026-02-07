@@ -35,12 +35,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/clinic-software-pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/felixatouch-clinic-software-blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Blog
                 </Link>
               </li>
@@ -50,12 +50,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/contact-felixatouch" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/about-clinic-management-software-in-india" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   About
                 </Link>
               </li>
