@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  Building2, 
-  Globe2, 
-  Users, 
-  Target, 
+import {
+  Building2,
+  Globe2,
+  Users,
+  Target,
   Award,
   Heart,
   Lightbulb,
@@ -122,15 +122,15 @@ export default function AboutPage() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="About Us - IntPurple Technologies & FelixaCare Platform | FelixaTouch"
         description="Learn about IntPurple Technologies LLP, creators of the FelixaCare digital health platform. FelixaTouch is part of our comprehensive healthcare technology ecosystem serving clinics across India, UAE, Qatar, Bahrain, and KSA."
-        url="/about"
+        url="/about-clinic-management-software-in-india"
       />
-      
+
       <div className="min-h-screen bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <Header />
-        
+
         <main>
           {/* Hero Section */}
           <section className="relative py-20 sm:py-28 overflow-hidden">
@@ -154,13 +154,13 @@ export default function AboutPage() {
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto mb-8 leading-relaxed">
-                Digitizing the future of healthcare using AI and innovative technology solutions. 
+                Digitizing the future of healthcare using AI and innovative technology solutions.
                 Creators of the FelixaCare digital health platform.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-emerald-600 hover:from-purple-700 hover:to-emerald-700 text-white shadow-lg">
-                  <Link href="/contact">Get In Touch</Link>
+                  <Link href="/contact-felixatouch">Get In Touch</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a href="https://intpurple.com" target="_blank" rel="noopener noreferrer">
@@ -207,6 +207,89 @@ export default function AboutPage() {
             </div>
           </section>
 
+          <section className="py-20 bg-white dark:bg-slate-900">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+
+                {/* Image Content - Now on the Left */}
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-100 to-purple-100 dark:from-emerald-900/10 dark:to-purple-900/10 rounded-3xl blur-2xl" />
+                  <div className="relative aspect-video overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl">
+                    <Image
+                      src="/image_2d0ff6b1-f829-4087-99a7-500a75ef2d56.png" // Replace with your actual image path
+                      alt="FelixaTouch Clinic Management Software in India"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  {/* Decorative blob to match your site style */}
+                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-500/10 rounded-full blur-xl" />
+                </div>
+
+
+                <div>
+
+                  <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white mb-6">
+                    Clinic Management <br />
+                    <span className="bg-gradient-to-r from-purple-600 to-emerald-600 bg-clip-text text-transparent">
+                      Software in India
+                    </span>
+                  </h2>
+                  <div className="space-y-4 text-lg text-slate-600 dark:text-slate-400">
+                    <p>
+                      <strong className="text-slate-900 dark:text-white">FelixaTouch</strong> leads as the top clinic management software in India, providing an all-in-one solution to streamline healthcare operations.
+                    </p>
+                    <p>
+                      The software delivers various medical clinic solutions, catering to
+                      <span className="text-emerald-600 dark:text-emerald-400 font-medium"> general practitioners, Unani specialists, dentists, and wellness centers</span>.
+                      FelixaTouch equips healthcare providers with a robust set of features tailored to meet their unique needs.
+                    </p>
+                    <p>
+                      Whether for a small practice or a large clinic, FelixaTouch ensures smooth, efficient operations and enhances patient care. With the software, healthcare providers can focus on what matters most—delivering quality care.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section className="py-20 bg-white dark:bg-slate-900">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="order-2 md:order-1">
+                  <div className="space-y-4 text-lg text-slate-600 dark:text-slate-400">
+                    <p>
+                      <strong className="text-slate-900 dark:text-white">Felixacare</strong> is the healthcare platform developed by IntPurple Technologies. Our flagship product,
+                      <span className="text-purple-600 dark:text-purple-400 font-medium"> Felixatouch</span>, enhances the patient experience and optimizes clinic management.
+                    </p>
+                    <p>
+                      With over 5 years of experience in technology and healthcare solutions, our team at IntPurple focuses on innovation and growth. We are committed to creating user-friendly tools that improve administrative efficiency and enhance patient care.
+                    </p>
+                    <p>
+                      By combining our expertise and technology, we aim to make healthcare management smoother and more effective for both patients and providers across the region.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div className="order-1 md:order-2 relative">
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-purple-100 to-emerald-100 dark:from-purple-900/10 dark:to-emerald-900/10 rounded-3xl blur-2xl" />
+                  <div className="relative aspect-video overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl">
+                    <Image
+                      src="/image_8705c036-3c52-4cd8-ad3f-bff2907ca476.png"
+                      alt="FelixaTouch Clinic Management Software Dashboard"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl" />
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* FelixaCare Platform */}
           <section className="py-20 bg-slate-50 dark:bg-slate-950">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -223,14 +306,14 @@ export default function AboutPage() {
                   Ecosystem
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-                  FelixaTouch is powered by the FelixaCare digital health platform - a comprehensive ecosystem 
+                  FelixaTouch is powered by the FelixaCare digital health platform - a comprehensive ecosystem
                   of AI-enabled healthcare solutions designed for modern medical practices.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
                 {products.map((product, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-800 hover:border-purple-300 dark:hover:border-purple-700"
                   >
@@ -290,7 +373,7 @@ export default function AboutPage() {
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {achievements.map((achievement, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="text-center p-6 rounded-2xl bg-slate-50 dark:bg-slate-800 hover:bg-purple-50 dark:hover:bg-purple-950/20 transition-colors duration-300"
                   >
@@ -323,7 +406,7 @@ export default function AboutPage() {
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {values.map((value, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-300 dark:hover:border-emerald-700"
                   >
@@ -358,7 +441,7 @@ export default function AboutPage() {
 
               <div className="grid md:grid-cols-2 gap-8">
                 {offices.map((office, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700"
                   >
@@ -370,7 +453,7 @@ export default function AboutPage() {
                         {office.country}
                       </h3>
                     </div>
-                    
+
                     <div className="space-y-6">
                       {office.locations.map((location, idx) => (
                         <div key={idx} className="space-y-2">
@@ -413,15 +496,15 @@ export default function AboutPage() {
                 Ready to Transform Your Healthcare Practice?
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">
-                Join hundreds of healthcare professionals who trust IntPurple Technologies 
+                Join hundreds of healthcare professionals who trust IntPurple Technologies
                 and the FelixaCare platform for their digital transformation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-emerald-600 hover:from-purple-700 hover:to-emerald-700 text-white shadow-lg">
-                  <Link href="/contact">Contact Sales</Link>
+                  <Link href="/contact-felixatouch">Contact Sales</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link href="/pricing">View Pricing</Link>
+                  <Link href="/clinic-software-pricing">View Pricing</Link>
                 </Button>
               </div>
 

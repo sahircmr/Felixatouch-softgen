@@ -32,7 +32,7 @@ export default function SmartDigitalPatientRegistration() {
       <SEO
         title="What is the Smart and Digital Approach to Patient Registration in Healthcare? | FelixaTouch Blog"
         description="Discover how smart digital patient registration transforms healthcare operations. Learn about complete and spot registration workflows in FelixaTouch, designed for fast, flexible, and EMR-ready patient onboarding."
-        url="/blog/smart-digital-patient-registration-healthcare"
+        url="/felixatouch-clinic-software-blog/smart-digital-patient-registration-healthcare"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
@@ -46,7 +46,7 @@ export default function SmartDigitalPatientRegistration() {
             <div className="container mx-auto px-4 md:px-6 max-w-5xl relative">
               {/* Back to Blog */}
               <Link 
-                href="/blog"
+                href="/felixatouch-clinic-software-blog"
                 className="inline-flex items-center gap-2 text-brand-primary hover:text-brand-primary/80 font-semibold mb-8 group transition-colors"
               >
                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -69,7 +69,7 @@ export default function SmartDigitalPatientRegistration() {
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
                 What is the Smart and Digital Approach to{" "}
-                <span className="bg-gradient-to-r from-brand-primary via-purple-600 to-emerald-600 text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-purple-600 to-emerald-600 text-transparent bg-clip-text">
                   Patient Registration
                 </span>{" "}
                 in Healthcare?
@@ -166,7 +166,7 @@ export default function SmartDigitalPatientRegistration() {
               {/* Patient Registration Workflows Section */}
               <section className="mb-16">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-600 to-brand-primary flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-purple-600 flex items-center justify-center">
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-3xl font-black text-slate-900 dark:text-white">
@@ -392,7 +392,7 @@ export default function SmartDigitalPatientRegistration() {
                     {[
                       {
                         icon: Users,
-                        color: "brand-primary",
+                        color: "purple-600",
                         title: "Dual Registration Modes",
                         description: "For different clinical scenarios"
                       },
@@ -410,13 +410,13 @@ export default function SmartDigitalPatientRegistration() {
                       },
                       {
                         icon: TrendingUp,
-                        color: "brand-primary",
+                        color: "emerald-600",
                         title: "Reduced Administrative Workload",
                         description: "Streamline front-desk operations"
                       },
                       {
                         icon: Database,
-                        color: "emerald-600",
+                        color: "purple-600",
                         title: "Seamless Integration",
                         description: "With appointments, billing, labs, and pharmacy"
                       }
@@ -466,7 +466,7 @@ export default function SmartDigitalPatientRegistration() {
               </section>
 
               {/* CTA Section */}
-              <section className="bg-gradient-to-r from-brand-primary via-purple-600 to-emerald-600 rounded-2xl p-8 md:p-12 text-center text-white">
+              <section className="bg-gradient-to-r from-purple-600 to-emerald-600 rounded-2xl p-8 md:p-12 text-center text-white">
                 <Sparkles className="w-16 h-16 mx-auto mb-6 opacity-90" />
                 <h3 className="text-3xl font-black mb-4">
                   Ready to Transform Your Patient Registration Process?
@@ -475,13 +475,13 @@ export default function SmartDigitalPatientRegistration() {
                   Experience the power of smart digital patient registration with Felixatouch. Book a free demo today and see how we can streamline your clinic operations.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
-                  <Link href="/contact">
+                  <Link href="/contact-felixatouch">
                     <Button size="lg" variant="secondary" className="gap-2">
                       <UserPlus className="w-5 h-5" />
                       Book Free Demo
                     </Button>
                   </Link>
-                  <Link href="/pricing">
+                  <Link href="/clinic-software-pricing">
                     <Button size="lg" variant="outline" className="gap-2 bg-white/10 hover:bg-white/20 text-white border-white/30">
                       View Pricing
                     </Button>

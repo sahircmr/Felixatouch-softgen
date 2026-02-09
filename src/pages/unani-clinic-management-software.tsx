@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { LeadGenerationForm } from "@/components/LeadGenerationForm";
-import { 
-  FileText, 
-  Calendar, 
-  Users, 
-  DollarSign, 
-  Heart, 
-  Pill, 
-  BarChart3, 
-  MessageSquare, 
-  Clock, 
+import {
+  FileText,
+  Calendar,
+  Users,
+  DollarSign,
+  Heart,
+  Pill,
+  BarChart3,
+  MessageSquare,
+  Clock,
   Shield,
   CheckCircle2,
   ArrowRight,
@@ -143,16 +143,16 @@ export default function UnaniClinicManagementSoftware() {
         image="/og-image.png"
         url="/unani-clinic-management-software"
       />
-      
+
       <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
         <Header />
-        
+
         <main>
           {/* Hero Section */}
           <section className="relative overflow-hidden pt-32 pb-20 px-4">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(16,185,129,0.1),transparent_50%)]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(99,102,241,0.1),transparent_50%)]" />
-            
+
             <div className="max-w-7xl mx-auto relative">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-8">
@@ -161,29 +161,31 @@ export default function UnaniClinicManagementSoftware() {
                       FelixaTouch Unani
                     </span>
                   </div>
-                  
+
                   <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
                     Best Simple
-                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                    <span className="block  bg-clip-text bg-gradient-to-r text-emerald-600">
                       Unani Clinic
                     </span>
                     <span className="block text-slate-900 dark:text-white">Management Software</span>
                   </h1>
-                  
+
                   <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
                     FelixaTouch for Unani medicine streamlines treatment and management effectively. Handle patient records, e-prescriptions, appointments, and billing with a user-friendly interface that simplifies daily tasks while improving patient care.
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-4">
                     <Button size="lg" className="group text-lg h-14 px-8" onClick={() => setDemoFormOpen(true)}>
                       Book Demo
                       <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     <Button size="lg" variant="outline" className="text-lg h-14 px-8">
-                      View Features
+                      <Link href="/best-clinic-software-features">
+                        View Features
+                      </Link>
                     </Button>
                   </div>
-                  
+
                   <div className="flex items-center gap-8 pt-4">
                     <div className="text-center">
                       <div className="text-3xl font-black text-emerald-600">Simple</div>
@@ -201,7 +203,7 @@ export default function UnaniClinicManagementSoftware() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-brand-primary/20 rounded-3xl blur-3xl" />
                   <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl">
@@ -224,11 +226,11 @@ export default function UnaniClinicManagementSoftware() {
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                 We handle{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                <span className=" bg-clip-text bg-gradient-to-r text-emerald-600">
                   everything for you!
                 </span>
               </h2>
-              
+
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                 From <span className="font-semibold text-slate-900 dark:text-white">patient records to e-prescriptions, appointments, and billing</span>, FelixaTouch takes care of it all, so you can focus on what matters most—<span className="font-semibold text-slate-900 dark:text-white">your patients</span>. Our all-in-one clinic management software ensures a <span className="font-semibold text-slate-900 dark:text-white">smooth, paperless, and efficient workflow</span>, tailored specifically for <span className="font-semibold text-emerald-600">Unani medicine practices</span>.
               </p>
@@ -242,16 +244,16 @@ export default function UnaniClinicManagementSoftware() {
                 <div className="space-y-6">
                   <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900 dark:text-white">
                     Comprehensive{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-brand-primary">
+                    <span className=" bg-clip-text bg-gradient-to-r text-emerald-600">
                       Unani Prescription
                     </span>{" "}
                     Management
                   </h2>
-                  
+
                   <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
                     Create detailed e-prescriptions with Unani herbs, traditional medicines, and treatment protocols. Track medication history, manage dosages, and ensure accurate prescription delivery for optimal patient care.
                   </p>
-                  
+
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
@@ -271,7 +273,7 @@ export default function UnaniClinicManagementSoftware() {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="relative order-1 lg:order-2">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-brand-primary/20 rounded-3xl blur-3xl" />
                   <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl">
@@ -385,23 +387,23 @@ export default function UnaniClinicManagementSoftware() {
           </section>
 
           {/* User-Friendly CTA */}
-          <section className="py-20 px-4 bg-gradient-to-br from-emerald-600 to-brand-primary">
+          <section className="py-20 px-4 bg-emerald-600">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h2 className="text-4xl md:text-5xl font-black text-white">
                 The Most User-Friendly Software Ever
               </h2>
-              
+
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
                 FelixaTouch is designed to be the most user-friendly software you'll ever encounter. Its intuitive interface and streamlined workflows make it easy for anyone to learn and use, regardless of technical expertise.
               </p>
-              
+
               <div className="pt-4">
                 <Button size="lg" variant="secondary" className="group text-lg h-14 px-8 bg-white text-emerald-600 hover:bg-slate-50" onClick={() => setDemoFormOpen(true)}>
                   Get The Demo Now
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
-              
+
               <p className="text-sm text-white/75">
                 Don't miss our future updates! Get a free Demo Today!
               </p>
@@ -417,11 +419,11 @@ export default function UnaniClinicManagementSoftware() {
                   Unani Practice?
                 </span>
               </h2>
-              
+
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
                 Join Unani practitioners who have digitized their practices with FelixaTouch. Experience improved patient care, streamlined workflows, and cultural compatibility with the best simple Unani clinic management software.
               </p>
-              
+
               <div className="flex flex-wrap justify-center gap-4 pt-4">
                 <Button size="lg" className="group text-lg h-14 px-8" onClick={() => setDemoFormOpen(true)}>
                   Schedule Demo
