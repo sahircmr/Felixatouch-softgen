@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FileText, AlertTriangle, Shield, CreditCard, Scale, Users, Settings, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function TermsAndConditions() {
   return (
@@ -104,7 +105,7 @@ export default function TermsAndConditions() {
                 </div>
 
                 <p className="text-slate-700 dark:text-slate-300 mt-6">
-                  The collection, use, storage, processing, transfer, and deletion of Your personal information is governed by the <a href="/privacy-policy-2" className="text-brand-primary hover:underline font-semibold">"Privacy Policy"</a>.
+                  The collection, use, storage, processing, transfer, and deletion of Your personal information is governed by the <Link href="/privacy-policy-2" className="text-brand-primary hover:underline font-semibold">"Privacy Policy"</Link>.
                 </p>
               </section>
 
