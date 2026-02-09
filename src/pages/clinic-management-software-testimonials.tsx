@@ -36,7 +36,7 @@ export default function TestimonialsPage() {
       name: "Dr. Riyas",
       role: "Clinic Doctor",
       location: "Germany",
-      image: "/testimonial-dr-niyas.png",
+      image: "/testimonial-dr-alberto.png",
       testimonial: "FelixaTouch provides a clear and dependable system for managing clinical operations. From patient data to reporting, everything works in a connected and secure manner, which is essential for modern clinics.",
       keywords: ["secure EMR", "clinic management system"],
       rating: 5,
@@ -45,7 +45,7 @@ export default function TestimonialsPage() {
       name: "Dr. Alberto",
       role: "Clinic Doctor",
       location: "Costa Rica",
-      image: "/testimonial-dr-alberto.png",
+      image: "/testimonial-dr-niyas.png",
       testimonial: "The simplicity of FelixaTouch makes a real difference in our daily work. It reduces administrative effort and allows our team to focus more on patient care rather than managing multiple tools.",
       keywords: ["simple clinic software", "patient care management"],
       rating: 5,
@@ -156,20 +156,20 @@ export default function TestimonialsPage() {
                     key={index} 
                     className="p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-200 relative overflow-hidden group"
                   >
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-600/10 to-emerald-600/10 rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-600 to-emerald-600/10 rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
                     
-                    <div className="relative">
+                    <div className="relative pt-12">
                       {/* Quote Icon */}
-                      <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-purple-600 to-emerald-600 rounded-full flex items-center justify-center opacity-20">
+                      <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-purple-600 to-emerald-600/10 rounded-full flex items-center justify-center ">
                         <Quote className="w-8 h-8 text-white" />
                       </div>
 
                       {/* Rating */}
-                      <div className="flex gap-1 mb-6">
+                      {/* <div className="flex gap-1 mb-6">
                         {[...Array(testimonial.rating)].map((_, i) => (
                           <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                         ))}
-                      </div>
+                      </div> */}
 
                       {/* Testimonial Text */}
                       <p className="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed text-lg">

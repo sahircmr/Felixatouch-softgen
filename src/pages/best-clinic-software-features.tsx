@@ -589,7 +589,7 @@ export default function FeaturesPage() {
             </div>
           </section>
 
-          <section className="bg-gradient-to-br from-primary-600 to-accent-600 py-20">
+          <section className="bg-gradient-to-br from-purple-600 to-purple-400 py-20">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Ready to Transform Your Clinic?
@@ -601,7 +601,7 @@ export default function FeaturesPage() {
                 <Button size="lg" variant="secondary" onClick={() => setDemoFormOpen(true)}>
                   Book Free Demo
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-600" asChild>
+                <Button size="lg" variant="outline" className="border-white text-white" asChild>
                   <Link href="/">Back to Home</Link>
                 </Button>
               </div>
