@@ -488,7 +488,7 @@ export default function TermsAndConditions() {
               </section>
 
               {/* Contact Section */}
-              <section className="bg-gradient-to-br from-brand-primary to-purple-600 rounded-xl p-8 text-white">
+              <section className=" bg-gradient-to-br from-purple-600 to-emerald-600 rounded-xl p-8 text-white">
                 <h2 className="text-2xl font-black mb-4 flex items-center gap-3">
                   <Mail className="w-6 h-6" />
                   Contact Information

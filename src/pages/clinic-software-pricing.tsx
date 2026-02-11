@@ -380,7 +380,7 @@ export default function PricingPage() {
                 </h2>
 
                 <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-                  Join 500+ healthcare professionals who trust FelixaTouch. Start your free demo today!
+                  Join 100+ healthcare professionals who trust FelixaTouch. Start your free demo today!
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
