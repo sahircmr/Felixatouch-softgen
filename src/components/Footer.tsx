@@ -111,12 +111,12 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/privacy-policy-2" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Terms and Conditions
                 </Link>
               </li>

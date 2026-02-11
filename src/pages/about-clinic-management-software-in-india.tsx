@@ -197,7 +197,7 @@ export default function AboutPage() {
                     <div className="text-center space-y-6">
                       <Building2 className="w-32 h-32 mx-auto text-purple-600 dark:text-purple-400" />
                       <div>
-                        <p className="text-5xl font-black text-slate-900 dark:text-white mb-2">500+</p>
+                        <p className="text-5xl font-black text-slate-900 dark:text-white mb-2">100+</p>
                         <p className="text-xl text-slate-600 dark:text-slate-400">Healthcare Professionals Trust Us</p>
                       </div>
                     </div>
@@ -511,8 +511,8 @@ export default function AboutPage() {
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-slate-600 dark:text-slate-400">
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-                  <a href="mailto:Contact@IntPurple.com" className="hover:text-purple-600 dark:hover:text-purple-400">
-                    Contact@IntPurple.com
+                  <a href="mailto:contact@intpurple.com" className="hover:text-purple-600 dark:hover:text-purple-400">
+                    contact@intpurple.com
                   </a>
                 </div>
                 <div className="flex items-center gap-2">

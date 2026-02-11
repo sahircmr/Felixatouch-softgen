@@ -27,7 +27,7 @@ export default function TestimonialsPage() {
       name: "Dr. Niyas",
       role: "Multispeciality Clinic Doctor",
       location: "India",
-      image: "/testimonial-dr-niyas.png",
+      image: "/testimonial-dr-alberto.png",
       testimonial: "Managing multiple departments became much easier with FelixaTouch. The software brings together patient records, billing, and staff coordination in one place, improving efficiency across our multispeciality clinic.",
       keywords: ["multispeciality clinic software", "clinic workflow management"],
       rating: 5,
@@ -36,7 +36,7 @@ export default function TestimonialsPage() {
       name: "Dr. Riyas",
       role: "Clinic Doctor",
       location: "Germany",
-      image: "/testimonial-dr-alberto.png",
+      image: "/dr-riyas-1.png",
       testimonial: "FelixaTouch provides a clear and dependable system for managing clinical operations. From patient data to reporting, everything works in a connected and secure manner, which is essential for modern clinics.",
       keywords: ["secure EMR", "clinic management system"],
       rating: 5,
@@ -71,8 +71,8 @@ export default function TestimonialsPage() {
   ];
 
   const stats = [
-    { value: "500+", label: "Happy Clinics", icon: Building2 },
-    { value: "15+", label: "Countries", icon: Globe2 },
+    { value: "50+", label: "Happy Clinics", icon: Building2 },
+    { value: "5+", label: "Countries", icon: Globe2 },
     { value: "98%", label: "Satisfaction Rate", icon: Award },
     { value: "24/7", label: "Support Available", icon: Star },
   ];
@@ -94,21 +94,21 @@ export default function TestimonialsPage() {
           <section className="relative py-20 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-emerald-500/10 to-purple-600/10" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(168,85,247,0.1),transparent_50%)]" />
-            
+
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center space-y-6">
                 <Badge className="bg-gradient-to-r from-purple-600 to-emerald-600 text-white border-0 px-6 py-2 text-sm">
                   <Star className="w-4 h-4 mr-2 inline" />
                   Trusted by Healthcare Professionals Worldwide
                 </Badge>
-                
+
                 <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white leading-tight">
                   What Our{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-emerald-600">
                     Doctors Say
                   </span>
                 </h1>
-                
+
                 <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
                   Real experiences from healthcare professionals who transformed their clinic operations with FelixaTouch clinic management software
                 </p>
@@ -152,12 +152,12 @@ export default function TestimonialsPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 {testimonials.map((testimonial, index) => (
-                  <Card 
-                    key={index} 
+                  <Card
+                    key={index}
                     className="p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-200 relative overflow-hidden group"
                   >
                     <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-600 to-emerald-600/10 rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
-                    
+
                     <div className="relative pt-12">
                       {/* Quote Icon */}
                       <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-purple-600 to-emerald-600/10 rounded-full flex items-center justify-center ">
@@ -178,11 +178,13 @@ export default function TestimonialsPage() {
 
                       {/* Author Info */}
                       <div className="flex items-center gap-4 pt-6 border-t border-slate-200 dark:border-slate-700">
-                        <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-purple-200">
+                        <div className="relative w-16 h-16 shrink-0 rounded-full overflow-hidden ring-2 ring-purple-200">
                           <Image
                             src={testimonial.image}
                             alt={testimonial.name}
                             fill
+                            sizes="64px"
+                            priority={index < 3}
                             className="object-cover"
                           />
                         </div>
@@ -223,25 +225,26 @@ export default function TestimonialsPage() {
                   <Globe2 className="w-4 h-4 mr-2 inline" />
                   Global Healthcare Solution
                 </Badge>
-                
+
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
                   Serving Clinics from{" "}
                   <span className="text-emerald-600">India</span> to{" "}
                   <span className="text-purple-600">Costa Rica</span>
                 </h2>
-                
+
                 <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                   FelixaTouch is trusted by healthcare professionals across continents. From traditional Unani and Ayurveda practices to modern multispeciality clinics, our software adapts to diverse healthcare needs worldwide.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
                   {[
+                    "Multispeciality Hospitals",
+                    "General Clinics",
                     "Unani Clinics",
                     "Ayurveda Centers",
                     "Dental Practices",
-                    "Multispeciality Hospitals",
-                    "General Clinics",
                     "Wellness Centers",
+                    "Dermatology Clinics",
                   ].map((type, index) => (
                     <div
                       key={index}
@@ -267,13 +270,13 @@ export default function TestimonialsPage() {
                 <Card className="relative overflow-hidden border-0 shadow-2xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-700 to-emerald-600" />
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_70%)]" />
-                  
+
                   <div className="relative z-10 p-12 md:p-16 text-center text-white space-y-8">
                     <h2 className="text-4xl md:text-5xl font-black leading-tight">
                       Ready to Join Our Growing Family of{" "}
                       <span className="text-yellow-300">Happy Doctors?</span>
                     </h2>
-                    
+
                     <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto">
                       Experience the difference FelixaTouch makes in your clinic operations. Start your free demo today and see why doctors worldwide trust us.
                     </p>
