@@ -54,7 +54,7 @@ export default function TestimonialsPage() {
       name: "Haris",
       role: "Manager",
       location: "Peace Village",
-      image: "/testimonial-dr.png",
+      image: "/testimonial-haris.jpeg",
       testimonial: "FelixaTouch has brought structure and transparency to our operations at Peace Village. Managing patient information, staff coordination, and daily activities is now more organized and efficient.",
       keywords: ["healthcare operations management", "patient information system"],
       rating: 5,
