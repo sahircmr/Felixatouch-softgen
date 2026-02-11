@@ -28,8 +28,11 @@ import {
   CheckCircle2,
   ArrowRight
 } from "lucide-react";
+import { useState } from "react";
+import { LeadGenerationForm } from "@/components/LeadGenerationForm";
 
 export default function Home() {
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
   return (
     <>
       <SEO
@@ -61,8 +64,8 @@ export default function Home() {
                   <strong className="text-foreground">increase your revenue and patient footfall</strong>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-lg px-8 shadow-xl" asChild>
-                    <Link href="#demo">Talk to an expert →</Link>
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-lg px-8 shadow-xl" onClick={() => setDemoFormOpen(true)}>
+                    Talk to an expert →
                   </Button>
                   <Button size="lg" variant="outline" className="text-lg px-8 border-2" asChild>
                     <Link href="#features">See how it works</Link>
@@ -681,6 +684,7 @@ export default function Home() {
 
         <Footer />
       </div>
+      <LeadGenerationForm open={demoFormOpen} onOpenChange={setDemoFormOpen} source="pricing_page" />
     </>
   );
 }
